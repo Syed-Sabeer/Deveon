@@ -401,7 +401,7 @@ About START -->
               </div>
 
               <!-- Image -->
-              <img src="{{ asset('FrontendAssets/images/MSglobal-images/team-images/saqibb.jpg')}}"
+              <img src="{{ asset('FrontendAssets/images/team-images/sabeer.png')}}"
                    class="card-img-tops"
                    alt="Syed Sabeer Faisal - Founder & CEO"
                    style="height: 600px; object-fit: cover;" />
@@ -480,7 +480,7 @@ About START -->
                 <small class="text-muted">Founder & CEO, Deveon Inc</small>
               </div>
               <div class="ms-auto">
-                <img src="{{ asset('FrontendAssets/images/MSglobal-images/logo.png')}}"
+                <img src="{{ asset($business_settings->dark_logo_image)}}"
                      alt="Deveon Inc"
                      style="height: 40px; opacity: 0.6;" />
               </div>
