@@ -68,7 +68,7 @@
                                 <div class="col-12">
                                     <h6 class="mb-3 text-primary">Logo Settings</h6>
                                 </div>
-                                
+
                                 <div class="col-md-6 mt-3">
                                     <div class="form-group">
                                         <label class="form-label">Light Logo Image</label>
@@ -103,12 +103,12 @@
                                 <div class="col-12">
                                     <h6 class="mb-3 text-primary">Contact Information</h6>
                                 </div>
-                                
+
                                 <div class="col-md-6 mt-3">
                                     <div class="form-group">
                                         <label class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" name="email" 
-                                               value="{{ old('email', $businessSetting->email ?? '') }}" 
+                                        <input type="email" class="form-control" name="email"
+                                               value="{{ old('email', $businessSetting->email ?? '') }}"
                                                placeholder="Enter Email Address">
                                     </div>
                                 </div>
@@ -116,8 +116,8 @@
                                 <div class="col-md-6 mt-3">
                                     <div class="form-group">
                                         <label class="form-label">Phone Number</label>
-                                        <input type="text" class="form-control" name="phone" 
-                                               value="{{ old('phone', $businessSetting->phone ?? '') }}" 
+                                        <input type="text" class="form-control" name="phone"
+                                               value="{{ old('phone', $businessSetting->phone ?? '') }}"
                                                placeholder="Enter Phone Number">
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                                 <div class="col-md-12 mt-3">
                                     <div class="form-group">
                                         <label class="form-label">Address</label>
-                                        <textarea class="form-control" name="address" rows="3" 
+                                        <textarea class="form-control" name="address" rows="3"
                                                   placeholder="Enter Business Address">{{ old('address', $businessSetting->address ?? '') }}</textarea>
                                     </div>
                                 </div>
@@ -136,39 +136,39 @@
                                 <div class="col-12">
                                     <h6 class="mb-3 text-primary">Social Media Links</h6>
                                 </div>
-                                
+
                                 <div class="col-md-6 mt-3">
                                     <div class="form-group">
                                         <label class="form-label">Facebook Link</label>
-                                        <input type="text" class="form-control" name="facebook_link" 
-                                               value="{{ old('facebook_link', $businessSetting->facebook_link ?? '') }}" 
+                                        <input type="text" class="form-control" name="facebook_link"
+                                               value="{{ old('facebook_link', $businessSetting->facebook_link ?? '') }}"
                                                placeholder="Enter Facebook URL">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 mt-3">
                                     <div class="form-group">
-                                        <label class="form-label">YouTube Link</label>
-                                        <input type="text" class="form-control" name="youtube_link" 
-                                               value="{{ old('youtube_link', $businessSetting->youtube_link ?? '') }}" 
-                                               placeholder="Enter YouTube URL">
+                                        <label class="form-label">LinkedIn Link</label>
+                                        <input type="text" class="form-control" name="youtube_link"
+                                               value="{{ old('youtube_link', $businessSetting->youtube_link ?? '') }}"
+                                               placeholder="Enter LinkedIn URL">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 mt-3">
                                     <div class="form-group">
-                                        <label class="form-label">TikTok Link</label>
-                                        <input type="text" class="form-control" name="tiktok_link" 
-                                               value="{{ old('tiktok_link', $businessSetting->tiktok_link ?? '') }}" 
-                                               placeholder="Enter TikTok URL">
+                                        <label class="form-label">X Link</label>
+                                        <input type="text" class="form-control" name="tiktok_link"
+                                               value="{{ old('tiktok_link', $businessSetting->tiktok_link ?? '') }}"
+                                               placeholder="Enter X URL">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 mt-3">
                                     <div class="form-group">
                                         <label class="form-label">Instagram Link</label>
-                                        <input type="text" class="form-control" name="instagram_link" 
-                                               value="{{ old('instagram_link', $businessSetting->instagram_link ?? '') }}" 
+                                        <input type="text" class="form-control" name="instagram_link"
+                                               value="{{ old('instagram_link', $businessSetting->instagram_link ?? '') }}"
                                                placeholder="Enter Instagram URL">
                                     </div>
                                 </div>
@@ -179,11 +179,11 @@
                                 <div class="col-12">
                                     <h6 class="mb-3 text-primary">Footer Settings</h6>
                                 </div>
-                                
+
                                 <div class="col-md-12 mt-3">
                                     <div class="form-group">
                                         <label class="form-label">Footer Copyright Text</label>
-                                        <textarea class="form-control" name="footer_copyright_text" rows="3" 
+                                        <textarea class="form-control" name="footer_copyright_text" rows="3"
                                                   placeholder="Enter Footer Copyright Text">{{ old('footer_copyright_text', $businessSetting->footer_copyright_text ?? '') }}</textarea>
                                     </div>
                                 </div>

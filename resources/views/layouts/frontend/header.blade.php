@@ -21,16 +21,16 @@
           <ul class="list-inline mb-0">
             <li class="list-inline-item small text-white">Follow us on:</li>
             <li class="list-inline-item">
-              <a href="https://www.facebook.com/Msglobalinc1/" class="link-white"><i class="bi bi-facebook"></i></a>
+              <a href="{{ $business_settings->facebook_link }}" class="link-white"><i class="bi bi-facebook"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.youtube.com/channel/UCkh34Uq4_jcMMwI4DOABExg" class="link-white"><i class="bi bi-youtube"></i></a>
+              <a href="{{ $business_settings->instagram_link }}" class="link-white"><i class="bi bi-instagram"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="https://x.com/msglobalinc" class="link-white"><i class="bi bi-twitter-x"></i></a>
+              <a href="{{ $business_settings->tiktok_link }}" class="link-white"><i class="bi bi-twitter-x"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/company/ms-global-inc" class="link-white"><i class="bi bi-linkedin"></i></a>
+              <a href="{{ $business_settings->youtube_link }}" class="link-white"><i class="bi bi-linkedin"></i></a>
             </li>
           </ul>
         </div>

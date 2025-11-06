@@ -67,130 +67,125 @@
 
           <!-- job list -->
           <div class="row">
+          
             <div class="col-xxl-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mx-auto">
               <!-- Job item -->
               <div
-                class="card bg-transparent bg-opacity-50 border border-opacity-10 card-hover-transition card-hover-shadow    mb-4">
-                <div class="card-body p-4">
-
-                  <div>
-                    <h4 class="mb-3">Sales Account Executive</h4>
-                    <!-- End Col -->
-                     <h6>Jobs Summary</h6>
-                     <span>We are looking for a results-driven and client-focused Sales Account Executive to join our dynamic sales team in Karachi. The ideal candidate will play a critical role in identifying new business opportunities, managing client relationships, and driving revenue growth through consultative selling and strategic account management.</span>
-                     <div class="row">
-                     <div class="col-6">
-                     <h6 class="pt-3">Key Responsibilities</h6>
-                     <ul>
-                      <li>Identify and pursue new sales leads through networking, referrals, and market research.</li>
-                      <li>Build and maintain strong relationships with new and existing clients.</li>
-                      <li>Conduct sales presentations and product demos tailored to client needs.</li>
-                      <li>Negotiate contracts and close deals to meet and exceed sales targets.</li>
-                     </ul>
-                    </div>
-                    <div class="col-6">
-                     <span class="mt-3 d-flex align-items-baseline gap-2"><h6 class="">Location:</h6> Karachi, Pakistan</span>
-                     <span class="d-flex align-items-baseline gap-2"><h6 class="">Department :</h6>  Sales</span>
-                     <span class="d-flex align-items-baseline gap-2"><h6 class="">Experience:</h6> 2+ Years</span>
-                    <span class="d-flex align-items-baseline gap-2"><h6 class="">Job Type:</h6> Full-time</span>
-                    <span class="d-flex align-items-baseline gap-2"><h6 class="">Salary:</h6> 70k to 100k</span>
-                    </div>
+                class="card bg-transparent bg-opacity-50 border border-opacity-10 card-hover-transition card-hover-shadow mb-4 overflow-hidden position-relative">
+                <!-- Decorative accent line -->
+                <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);"></div>
+                
+                <div class="card-body p-5">
+                  <!-- Job Title and Badge -->
+                  <div class="d-flex justify-content-between align-items-start mb-4">
+                    <div class="flex-grow-1">
+                      <h4 class="mb-2 fw-bold">Backend Laravel Developer</h4>
+                      <span class="badge bg-primary bg-opacity-20 text-primary border border-primary border-opacity-25 px-3 py-2" style="color:#ffff !important;">Full-time</span>
                     </div>
                   </div>
-                  <div>
-                    <a href class="fw-semibold mt-3 link-success icon-link icon-link-hover stretched-link"
-                      data-bs-toggle="modal" data-bs-target="#applyForm">Apply <i class="bi bi-arrow-right"></i></a>
+
+             
+
+                  <!-- Job Summary -->
+                  <div class="mb-4">
+                    <h6 class="text-primary mb-3 fw-semibold d-flex align-items-center gap-2">
+                      <i class="bi bi-file-text"></i>
+                      Job Summary
+                    </h6>
+                    <p class="text-white-50 mb-0 lh-lg">
+                      We are seeking a skilled and detail-oriented Backend Laravel Developer to join our growing development team. The ideal candidate will be responsible for building and maintaining robust backend solutions using Laravel and related technologies. You'll work closely with our front-end developers, UI/UX designers, and project managers to deliver high-quality, scalable web applications.
+                    </p>
+                  </div>
+
+                  <!-- Two Column Layout -->
+                  <div class="row g-4 mb-4">
+                    <!-- Key Responsibilities -->
+                    <div class="col-lg-6">
+                      <h6 class="text-primary mb-3 fw-semibold d-flex align-items-center gap-2">
+                        <i class="bi bi-list-check"></i>
+                        Key Responsibilities
+                      </h6>
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-2 d-flex align-items-start gap-2">
+                          <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                          <span class="text-white-50 small">Develop, test, and maintain scalable backend services using Laravel framework.</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start gap-2">
+                          <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                          <span class="text-white-50 small">Integrate third-party APIs, databases, and internal tools.</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start gap-2">
+                          <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                          <span class="text-white-50 small">Design and implement RESTful APIs and microservices architecture.</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start gap-2">
+                          <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                          <span class="text-white-50 small">Collaborate with front-end developers to ensure seamless data flow and application performance.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Job Information -->
+                    <div class="col-lg-6">
+                      <h6 class="text-primary mb-3 fw-semibold d-flex align-items-center gap-2">
+                        <i class="bi bi-info-circle"></i>
+                        Job Information
+                      </h6>
+                      <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="bg-primary bg-opacity-10 rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="bi bi-geo-alt-fill text-primary"></i>
+                          </div>
+                          <div>
+                            <small class="text-white-50 d-block">Location</small>
+                            <span class="text-white fw-semibold">Karachi, Pakistan</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="bg-primary bg-opacity-10 rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="bi bi-building text-primary"></i>
+                          </div>
+                          <div>
+                            <small class="text-white-50 d-block">Department</small>
+                            <span class="text-white fw-semibold">Production</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="bg-primary bg-opacity-10 rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="bi bi-briefcase-fill text-primary"></i>
+                          </div>
+                          <div>
+                            <small class="text-white-50 d-block">Experience</small>
+                            <span class="text-white fw-semibold">3+ Years</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="bg-primary bg-opacity-10 rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="bi bi-currency-dollar text-primary"></i>
+                          </div>
+                          <div>
+                            <small class="text-white-50 d-block">Salary Range</small>
+                            <span class="text-white fw-semibold">70k - 100k PKR</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Apply Button -->
+                  <div class="d-flex justify-content-end pt-3 border-top border-secondary border-opacity-25">
+                    <a href="#" 
+                       class="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center gap-2 fw-semibold"
+                       data-bs-toggle="modal" 
+                       data-bs-target="#applyForm">
+                      Apply Now
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xxl-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mx-auto">
-              <!-- Job item -->
-              <div
-                class="card bg-transparent bg-opacity-50 border border-opacity-10 card-hover-transition card-hover-shadow    mb-4">
-                <div class="card-body p-4">
 
-                  <div>
-                    <h4 class="mb-3">Backend Laravel Developer</h4>
-                    <!-- End Col -->
-                     <h6>Jobs Summary</h6>
-                     <span>We are seeking a skilled and detail-oriented Backend Laravel Developer to join our growing development team. The ideal candidate will be responsible for building and maintaining robust backend solutions using Laravel and related technologies. You’ll work closely with our front-end developers, UI/UX designers, and project managers to deliver high-quality, scalable web applications.</span>
-                     <div class="row">
-                     <div class="col-6">
-                     <h6 class="pt-3">Key Responsibilities</h6>
-                     <ul>
-                      <li>Develop, test, and maintain scalable backend services using Laravel framework.</li>
-                      <li>Integrate third-party APIs, databases, and internal tools.</li>
-                      <li>Design and implement RESTful APIs and microservices architecture.</li>
-                      <li>Collaborate with front-end developers to ensure seamless data flow and application performance.</li>
-                     </ul>
-                    </div>
-                    <div class="col-6">
-                     <span class="mt-3 d-flex align-items-baseline gap-2"><h6 class="">Location:</h6> Karachi, Pakistan</span>
-                     <span class="d-flex align-items-baseline gap-2"><h6 class="">Department :</h6>  Production</span>
-                     <span class="d-flex align-items-baseline gap-2"><h6 class="">Experience:</h6> 3+ Years</span>
-                    <span class="d-flex align-items-baseline gap-2"><h6 class="">Job Type:</h6> Full-time</span>
-                    <span class="d-flex align-items-baseline gap-2"><h6 class="">Salary:</h6> 70k to 100k</span>
-                    </div>
-                    </div>
-                  </div>
-                  <div>
-                    <!-- End Col -->
-                    <a href class="fw-semibold mt-3 link-success icon-link icon-link-hover stretched-link"
-                      data-bs-toggle="modal" data-bs-target="#applyForm">Apply <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                  <!-- End Col -->
-
-                  <!-- End Row -->
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mx-auto">
-              <!-- Job item -->
-              <div
-                class="card bg-transparent bg-opacity-50 border border-opacity-10 card-hover-transition card-hover-shadow    mb-4">
-                <div class="card-body p-4">
-
-                  <div>
-                    <h4 class="mb-3">Project Coordinator</h4>
-                    <!-- End Col -->
-                     <h6>Jobs Summary</h6>
-                     <span>Deveon is looking for an organized and proactive Project Coordinator to support our growing team. In this role, you'll work closely with project managers, developers, designers, and clients to ensure smooth execution and timely delivery of IT and digital projects. You’ll act as the communication bridge between internal teams and clients—keeping tasks on track, goals aligned, and expectations clear.</span>
-                    <div class="row">
-                    <div class="col-6">
-                     <h6 class="pt-3">Key Responsibilities</h6>
-                     <ul>
-                      <li>Coordinate and monitor daily project activities to ensure timelines, deliverables, and quality standards are met.</li>
-                      <li>Act as the central point of communication between clients and internal teams.</li>
-                      <li>Maintain project documentation, schedules, task lists, and reports.</li>
-                      <li>Support project planning, resource allocation, and budgeting processes.</li>
-                      <li>Track and manage project risks, issues, and changes in scope.</li>
-                     </ul>
-                    </div>
-                    <div class="col-6">
-                     <span class="mt-3 d-flex align-items-baseline gap-2"><h6 class="">Location:</h6> Karachi, Pakistan</span>
-
-                     <span class="d-flex align-items-baseline gap-2"><h6 class="">Department :</h6>  Project Management</span>
-
-                     <span class="d-flex align-items-baseline gap-2"><h6 class="">Experience:</h6> 2+ Years</span>
-
-                    <span class="d-flex align-items-baseline gap-2"><h6 class="">Job Type:</h6> Full-time</span>
-
-                    <span class="d-flex align-items-baseline gap-2"><h6 class="">Salary:</h6> 70k to 100k</span>
-                    </div>
-                    </div>
-                  </div>
-                  <div>
-
-                    <a href class="fw-semibold mt-3 link-success icon-link icon-link-hover stretched-link"
-                      data-bs-toggle="modal" data-bs-target="#applyForm">Apply <i class="bi bi-arrow-right"></i></a>
-                  </div>
-
-
-                  <!-- End Row -->
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>

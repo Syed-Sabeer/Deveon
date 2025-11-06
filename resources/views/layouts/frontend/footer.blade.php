@@ -10,7 +10,7 @@
           <!-- Widget item -->
           <div class="col-md-6 col-xl-4">
             <!-- logo -->
-            <a href="index.html">
+            <a href="{{ route('home') }}">
               <img
                 class="footer-logo"
                 src="{{$business_settings->light_logo_image}}"
@@ -30,19 +30,19 @@
                 <!-- Links -->
                 <ul class="nav flex-column gap-1">
                   <li class="nav-item">
-                    <a class="nav-link pt-0" href="/about-v1.html">About us</a>
+                    <a class="nav-link pt-0" href="{{ route('about') }}">About us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/portfolio-grid.html">Portfolio</a>
+                    <a class="nav-link" href="{{ route('portfolio') }}">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/career.html"
+                    <a class="nav-link" href="{{ route('career') }}"
                       >Career
                       <span class="badge bg-primary ms-2">3 jobs</span></a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/contact-us-v1.html">Contact us</a>
+                    <a class="nav-link" href="{{ route('contact') }}">Contact us</a>
                   </li>
 
 
@@ -53,22 +53,22 @@
                 <span class="heading-color fw-semibold">Follow on:</span>
                 <ul class="list-inline align-items-center mb-0 mt-3">
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-facebook" href="https://www.facebook.com/Msglobalinc1/"
+                    <a class="btn btn-xs btn-icon bg-facebook" href="{{ $business_settings->facebook_link }}"
                       ><i class="bi bi-facebook lh-base"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-instagram" href="https://www.youtube.com/channel/UCkh34Uq4_jcMMwI4DOABExg"
-                      ><i class="bi bi-youtube lh-base"></i
+                    <a class="btn btn-xs btn-icon bg-instagram" href="{{ $business_settings->instagram_link }}"
+                      ><i class="bi bi-instagram lh-base"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-twitter-x" href="https://x.com/msglobalinc"
+                    <a class="btn btn-xs btn-icon bg-twitter-x" href="{{ $business_settings->tiktok_link }}"
                       ><i class="bi bi-twitter-x lh-base"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-linkedin" href="https://www.linkedin.com/company/ms-global-inc"
+                    <a class="btn btn-xs btn-icon bg-linkedin" href="{{ $business_settings->youtube_link }}"
                       ><i class="bi bi-linkedin lh-base"></i
                     ></a>
                   </li>

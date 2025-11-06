@@ -294,12 +294,12 @@
                   <!-- List -->
                   <ul class="mb-0 mt-3">
                     <li class="mb-2">
-                      Plot No. R-52, MS House, Block 6 Gulshan-e-Iqbal, Karachi,
+                      Plot No. B-130, Block 6 Gulshan-e-Iqbal, Karachi,
                       75300
                     </li>
                     <!-- <li class="mb-2">Call: +1 (905) 514-8474 (Toll-free)</li> -->
                     <li class="mb-2">
-                      Support time: Monday to Saturday 12:00 pm to 11:00 pm
+                      Support time: Monday to Saturday 09:00 A.M to 11:30 P.M
                     </li>
                   </ul>
                 </div>
@@ -311,21 +311,20 @@
                     <div class="avatar avatar-xs flex-shrink-0">
                       <img
                         class="avatar-img rounded-circle"
-                        src="{{ asset('FrontendAssets/images/flags/323301.png')}}"
+                        src="{{ asset('FrontendAssets/images/flags/canada.png')}}"
                         alt="avatar"
                       />
                     </div>
-                    <h6 class="mb-0">Dubai</h6>
+                    <h6 class="mb-0">Canada</h6>
                   </div>
                   <!-- List -->
                   <ul class="mb-0 mt-3">
                     <li class="mb-2">
-                      Office # 8, Plot No: 539-0, Al Barsha, First Area Rasis
-                      Business Centre
+                      Suite 391 - 1505 Laperriere Avenue, Ottawa, Ontario K1Z 7T1, Canada
                     </li>
                     <!-- <li class="mb-2">Call: 258-698-2410 (Toll-free)</li> -->
                     <li class="mb-2">
-                      Support time: Sunday to Friday 9:00 am to 5:30 pm
+                      Support time: Sunday to Friday 9:00 A.M to 11:30 PM
                     </li>
                   </ul>
                 </div>

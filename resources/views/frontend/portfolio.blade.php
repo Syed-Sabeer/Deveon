@@ -152,7 +152,7 @@ Portfolio START -->
                 </p>
                 <!-- List -->
                 <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
-                  <li class="nav-item heading-color">2023</li>
+                  <li class="nav-item heading-color">2025</li>
                   <li class="nav-item heading-color">Branding</li>
                   <li class="nav-item heading-color">Marketing</li>
                   <li class="nav-item heading-color">UI/UX design</li>
@@ -334,7 +334,7 @@ Portfolio START -->
                     alt="client logo">
                 </div>
                 <!-- Title -->
-                <h5 class="mb-3">OnePageCRM - Simple CRM System</h5>
+                <h5 class="mb-3">Monkey Beanies</h5>
                 <p>OnePageCRM is a unique combination of a simple CRM app and a productivity tool with follow-up
                   reminders next to every contact. It helps you keep in touch with clients, prospects, and partners, and
                   nurture business relationships.</p>
@@ -444,7 +444,7 @@ Portfolio END -->
 
                 <!-- Card elements -->
                 <div class="card-img-overlay p-4 p-xxl-5">
-                  <h5 class="text-white">Astoria</h5>
+                  <h5 class="text-white">Def Cutz Studio</h5>
                   <p class="text-white">
                     Τhe small Greek island of Patmos is situated in the Aegean Sea About Patmos Beaches
                   </p>
