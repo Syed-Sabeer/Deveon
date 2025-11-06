@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2025 at 09:34 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: Nov 06, 2025 at 01:10 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,41 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `deveondynamicsllc`
+-- Database: `dev`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `about_sections`
---
-
-CREATE TABLE `about_sections` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `about_heading` varchar(255) DEFAULT NULL,
-  `about_description_1` text DEFAULT NULL,
-  `about_description_2` text DEFAULT NULL,
-  `about_button_link` varchar(255) DEFAULT NULL,
-  `about_image_1` varchar(255) DEFAULT NULL,
-  `about_image_2` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `autodeposit_sections`
---
-
-CREATE TABLE `autodeposit_sections` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `heading` varchar(255) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `deposit_email` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -141,209 +108,6 @@ INSERT INTO `careers` (`id`, `title`, `job_type`, `summary`, `responsiblities`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cms_home_pages`
---
-
-CREATE TABLE `cms_home_pages` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `feature_heading` varchar(300) DEFAULT NULL,
-  `feature_icon_1` varchar(300) DEFAULT NULL,
-  `feature_title_1` varchar(300) DEFAULT NULL,
-  `feature_detail_1` varchar(300) DEFAULT NULL,
-  `feature_icon_2` varchar(300) DEFAULT NULL,
-  `feature_title_2` varchar(300) DEFAULT NULL,
-  `feature_detail_2` varchar(300) DEFAULT NULL,
-  `feature_icon_3` varchar(300) DEFAULT NULL,
-  `feature_title_3` varchar(300) DEFAULT NULL,
-  `feature_detail_3` varchar(300) DEFAULT NULL,
-  `feature_icon_4` varchar(300) DEFAULT NULL,
-  `feature_title_4` varchar(300) DEFAULT NULL,
-  `feature_detail_4` varchar(300) DEFAULT NULL,
-  `feature_icon_5` varchar(300) DEFAULT NULL,
-  `feature_title_5` varchar(300) DEFAULT NULL,
-  `feature_detail_5` varchar(300) DEFAULT NULL,
-  `feature_icon_6` varchar(300) DEFAULT NULL,
-  `feature_title_6` varchar(300) DEFAULT NULL,
-  `feature_detail_6` varchar(300) DEFAULT NULL,
-  `feature_image` text DEFAULT NULL,
-  `play_store_app_link` text DEFAULT NULL,
-  `app_store_app_link` text DEFAULT NULL,
-  `service_heading` varchar(300) DEFAULT NULL,
-  `service_description` text DEFAULT NULL,
-  `service_image` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `cms_home_pages`
---
-
-INSERT INTO `cms_home_pages` (`id`, `feature_heading`, `feature_icon_1`, `feature_title_1`, `feature_detail_1`, `feature_icon_2`, `feature_title_2`, `feature_detail_2`, `feature_icon_3`, `feature_title_3`, `feature_detail_3`, `feature_icon_4`, `feature_title_4`, `feature_detail_4`, `feature_icon_5`, `feature_title_5`, `feature_detail_5`, `feature_icon_6`, `feature_title_6`, `feature_detail_6`, `feature_image`, `play_store_app_link`, `app_store_app_link`, `service_heading`, `service_description`, `service_image`, `created_at`, `updated_at`) VALUES
-(1, 'Descubre nuestras mejores características de todos los tiempos', 'icon flaticon-driver-3', 'Servicios 24/7', '¡Elige tu destino, horario y preferencias para una experiencia de viaje personalizada!', 'icon flaticon-taxi-2', 'Fácil de buscar', '¡Nuestro sistema de reservas fácil de usar hace que buscar y programar tu viaje sea rápido y sin complicaciones!', 'icon flaticon-mobile-app', 'Tarifa justa', '¡Disfruta de precios transparentes sin cargos ocultos, conoce tu tarifa antes de viajar!', 'icon flaticon-mobile-app', 'Reservas', '¡Te recogemos rápido y a tiempo porque tu tiempo es importante!', 'icon flaticon-taxi-2', 'Conductoras profesionales', '¡Nuestros conductores corteses garantizan un viaje seguro, cómodo y placentero en todo momento!', 'icon flaticon-driver-3', 'Soporte rápido', '¿Necesitas ayuda? ¡Nuestro equipo de soporte 24/7 siempre está listo para ayudarte, rápido, amigable y sin complicaciones!', 'uploads/home/1757672573_gaari-01.png', '', '', 'Descubre todos nuestros Mejores Servicios.', 'En Transporte Saeta LLC, ofrecemos transporte confiable para todas tus necesidades, desde viajes dentro de la ciudad y traslados al aeropuerto hasta viajes de negocios y de larga distancia. No importa a dónde vayas, garantizamos un viaje seguro, cómodo y sin complicaciones.', 'uploads/home/1757672693_business transfer (1).jpg', '2025-09-11 11:22:53', '2025-09-12 05:24:53');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `cms_service_pages`
---
-
-CREATE TABLE `cms_service_pages` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `banner_image` text DEFAULT NULL,
-  `banner_heading` varchar(500) DEFAULT NULL,
-  `banner_description` varchar(500) DEFAULT NULL,
-  `banner_button_link` text DEFAULT NULL,
-  `company_heading` varchar(255) DEFAULT NULL,
-  `company_description` text DEFAULT NULL,
-  `company_video` text DEFAULT NULL,
-  `company_subheading` varchar(500) DEFAULT NULL,
-  `company_button_title` varchar(500) DEFAULT NULL,
-  `company_button_link` text DEFAULT NULL,
-  `blog_tab_title` varchar(500) DEFAULT NULL,
-  `blog_heading` varchar(500) DEFAULT NULL,
-  `blog_description` text DEFAULT NULL,
-  `service_main_image` text DEFAULT NULL,
-  `choose_image` text DEFAULT NULL,
-  `choose_heading` varchar(500) DEFAULT NULL,
-  `choose_tab_title_1` varchar(500) DEFAULT NULL,
-  `choose_tab_value_1` varchar(500) DEFAULT NULL,
-  `choose_tab_title_2` varchar(500) DEFAULT NULL,
-  `choose_tab_value_2` varchar(500) DEFAULT NULL,
-  `choose_button_title` varchar(500) DEFAULT NULL,
-  `choose_button_link` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `cms_service_pages`
---
-
-INSERT INTO `cms_service_pages` (`id`, `banner_image`, `banner_heading`, `banner_description`, `banner_button_link`, `company_heading`, `company_description`, `company_video`, `company_subheading`, `company_button_title`, `company_button_link`, `blog_tab_title`, `blog_heading`, `blog_description`, `service_main_image`, `choose_image`, `choose_heading`, `choose_tab_title_1`, `choose_tab_value_1`, `choose_tab_title_2`, `choose_tab_value_2`, `choose_button_title`, `choose_button_link`, `created_at`, `updated_at`) VALUES
-(1, 'uploads/service/1757684924_person-smiling-min.png', 'Reserva tu viaje Desde cualquier lugar.', 'Reserva tu viaje fácilmente desde cualquier lugar y en cualquier momento. Disfruta de un\r\nservicio rápido, seguro y confiable.', 'Tempor cupidatat vol', 'Ofrecemos un servicio confiable de reserva de taxis.', 'Viaja con facilidad ¡reserva desde cualquier lugar y en cualquier momento!', 'uploads/service/1757684924_video-texi.mp4', 'Reserva con la mejor compañía de taxis de habla hispana', 'Reservar un Taxi', 'Donaldson Atkins LLC', 'En Saeta, estamos comprometidos a brindar servicios de viaje confiables, seguros y convenientes en toda la región, en cualquier momento y en cualquier lugar.', 'Seguro. Confiable. Siempre ahí.', 'Ya sea que vaya a una cita médica, tome un vuelo o necesite transporte para citas relacionadas con inmigración, lo tenemos cubierto. Nuestra misión es hacer que el transporte sea sin estrés y accesible para todos.', 'uploads/service/1757685087_van02.jpg', 'uploads/service/1757685071_benefit3-1.png', '¡Disfruta de tu viaje con Citycar, la compañía de taxis líder!', 'Reserva más rápida', 'Reservas rápidas, viajes sin inconvenientes ¡Comienza en segundos!', 'Atención al cliente', 'Siempre aquí para usted. Atención al cliente 24 horas al día, 7 días a la semana, ¡a solo una llamada de distancia!', 'Reservar un Taxi', 'Dolores sit labore d', '2025-09-12 03:54:32', '2025-09-12 09:39:04');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `company_details`
---
-
-CREATE TABLE `company_details` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) DEFAULT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `logo` text DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `company_settings`
---
-
-CREATE TABLE `company_settings` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `company_name` varchar(255) DEFAULT NULL,
-  `country_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `dark_logo` varchar(255) DEFAULT NULL,
-  `light_logo` varchar(255) DEFAULT NULL,
-  `favicon` varchar(255) DEFAULT NULL,
-  `city` varchar(255) DEFAULT NULL,
-  `zip` varchar(255) DEFAULT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `about` text DEFAULT NULL,
-  `phone_number` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `facebook_url` varchar(255) DEFAULT NULL,
-  `linkedin_url` varchar(255) DEFAULT NULL,
-  `instagram_url` varchar(255) DEFAULT NULL,
-  `twitter_url` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `company_welcomes`
---
-
-CREATE TABLE `company_welcomes` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `tab_heading` varchar(300) NOT NULL,
-  `heading` varchar(300) NOT NULL,
-  `description` text NOT NULL,
-  `button_text` varchar(255) NOT NULL,
-  `button_link` text NOT NULL,
-  `tab_heading_1` varchar(255) NOT NULL,
-  `tab_value_1` varchar(255) NOT NULL,
-  `tab_heading_2` varchar(255) NOT NULL,
-  `tab_value_2` varchar(255) NOT NULL,
-  `tab_heading_3` varchar(255) NOT NULL,
-  `tab_value_3` varchar(255) NOT NULL,
-  `tab_heading_4` varchar(255) NOT NULL,
-  `tab_value_4` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `company_welcomes`
---
-
-INSERT INTO `company_welcomes` (`id`, `tab_heading`, `heading`, `description`, `button_text`, `button_link`, `tab_heading_1`, `tab_value_1`, `tab_heading_2`, `tab_value_2`, `tab_heading_3`, `tab_value_3`, `tab_heading_4`, `tab_value_4`, `created_at`, `updated_at`) VALUES
-(1, 'Bienvenido a Nuestra Empresa', 'Brindamos un Servicio Confiable en EE.UU.', 'Abordamos con éxito tareas de diversa complejidad, ofrecemos garantías a largo plazo y mejoramos constantemente.', 'Reservar un Taxi', 'dfd', 'Reseñas Activas', '28,000', 'Total de Pasajeros', '8,000', 'Clientes Satisfechos', '70,000', 'Equipo de Expertos', '1,200', '2025-09-11 07:41:38', '2025-09-12 05:26:25');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `contacts`
---
-
-CREATE TABLE `contacts` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `firstname` varchar(255) NOT NULL,
-  `lastname` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `phone` varchar(255) DEFAULT NULL,
-  `message` text NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `contact_cms_pages`
---
-
-CREATE TABLE `contact_cms_pages` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `tab_heading` varchar(255) NOT NULL,
-  `heading` varchar(255) NOT NULL,
-  `description` text NOT NULL,
-  `number` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `address` varchar(300) NOT NULL,
-  `location_link` text NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `contact_cms_pages`
---
-
-INSERT INTO `contact_cms_pages` (`id`, `tab_heading`, `heading`, `description`, `number`, `email`, `address`, `location_link`, `created_at`, `updated_at`) VALUES
-(1, 'Necesitas ayuda?', 'Ponte en contacto con nosotras', 'Necesita transporte? Transporte Saeta LLC le garantiza un transporte seguro, puntual y sin complicaciones, ya sea para un viaje local, una visita al hospital o un viaje fuera del estado. Estamos aquí para transportarle con cuidado y confiabilidad.', '703-200-4522', 'Info@taxihispanosaeta.com', '3417 Glen Carlyn Dr Ste 10, Bailey\'s Crossroads, VA 22041', 'https://maps.google.com/maps?width=600&height=400&hl=en&q=Taxi%20Hispano%20Saeta&t=&z=14&ie=UTF8&iwloc=B&output=embed', '2025-09-11 07:58:08', '2025-09-12 05:54:29');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `contact_submissions`
 --
 
@@ -368,7 +132,9 @@ INSERT INTO `contact_submissions` (`id`, `fullname`, `phone`, `email`, `subject`
 (16, 'Ishmael Oneill', '+1 (445) 495-2061', 'zozexipe@mailinator.com', 'Velit qui ex possim', 'Aliquip iste velit i', '2025-10-30 10:49:19', '2025-10-30 10:49:19'),
 (17, 'Jill Rendall', '4975229234', 'rendall.jill@yahoo.com', '5 Ready-To-Launch SaaS Businesses To Start Selling Instantly!', 'Start Your Own AI SaaS Agency & Charge Your Clients $497-$2997 For Creating 1 Single App… \r\nOr Sell Them on Fiverr, Upwork, Your Website, \r\nor As Monthly Subscription – For Fastest 6-Figure Passive Income!\r\n\r\nhttps://goldsolutions.pro/MagicAppsAI\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nto UNSUBSCRIBE:\r\nhttps://smartexperts.pro/unsubscribe?domain=deveondynamics.com\r\nAddress: 209 West Street Comstock Park, MI 49321', '2025-11-02 19:21:49', '2025-11-02 19:21:49'),
 (18, 'Errol Forney', '4037359054', 'joel.fox.1965+deveondynamics.com@gmail.com', 'Nonstop Payments', 'Discover The Easy New Way We’re Getting Paid Multiple Times A Day From A Hidden Source!\r\nhttps://www.novaai.expert/TheHiddenGoldmine\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nto UNSUBSCRIBE:\r\nhttps://www.novaai.expert/unsubscribe?domain=deveondynamics.com\r\nAddress: 209 West Street Comstock Park, MI 49321', '2025-11-03 03:25:24', '2025-11-03 03:25:24'),
-(19, 'Leo', '431814919', 'leo@beamon.medicopostura.com', 'Leo Beamon', 'Hello there \r\n\r\nLooking to improve your posture and live a healthier life? Our Medico Postura™ Body Posture Corrector is here to help!\r\n\r\nExperience instant posture improvement with Medico Postura™. This easy-to-use device can be worn anywhere, anytime – at home, work, or even while you sleep.\r\n\r\nMade from lightweight, breathable fabric, it ensures comfort all day long.\r\n\r\nGrab it today at a fantastic 60% OFF: https://medicopostura.com\r\n\r\nPlus, enjoy FREE shipping for today only!\r\n\r\nDon\'t miss out on this amazing deal. Get yours now and start transforming your posture!\r\n\r\nThanks for your time, \r\n\r\nLeo', '2025-11-03 10:25:08', '2025-11-03 10:25:08');
+(19, 'Leo', '431814919', 'leo@beamon.medicopostura.com', 'Leo Beamon', 'Hello there \r\n\r\nLooking to improve your posture and live a healthier life? Our Medico Postura™ Body Posture Corrector is here to help!\r\n\r\nExperience instant posture improvement with Medico Postura™. This easy-to-use device can be worn anywhere, anytime – at home, work, or even while you sleep.\r\n\r\nMade from lightweight, breathable fabric, it ensures comfort all day long.\r\n\r\nGrab it today at a fantastic 60% OFF: https://medicopostura.com\r\n\r\nPlus, enjoy FREE shipping for today only!\r\n\r\nDon\'t miss out on this amazing deal. Get yours now and start transforming your posture!\r\n\r\nThanks for your time, \r\n\r\nLeo', '2025-11-03 10:25:08', '2025-11-03 10:25:08'),
+(20, 'Noble Shepherd', '+1 (854) 424-7757', 'giryr@mailinator.com', 'Est enim mollit elit', 'Reiciendis error qui', '2025-11-06 06:24:30', '2025-11-06 06:24:30'),
+(21, 'Gavin Summers', '+1 (705) 732-9211', 'jaci@mailinator.com', 'Sed aut aut dolore c', 'Laboris corporis fug', '2025-11-06 06:24:53', '2025-11-06 06:24:53');
 
 -- --------------------------------------------------------
 
@@ -778,95 +544,6 @@ INSERT INTO `genders` (`id`, `name`, `is_active`, `created_at`, `updated_at`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hero_sections`
---
-
-CREATE TABLE `hero_sections` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `heading` varchar(255) DEFAULT NULL,
-  `subheading` varchar(255) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) DEFAULT NULL,
-  `phone_country` varchar(255) DEFAULT NULL,
-  `location` varchar(255) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hero_section_cruds`
---
-
-CREATE TABLE `hero_section_cruds` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `tab_heading` varchar(255) DEFAULT NULL,
-  `main_heading` varchar(255) DEFAULT NULL,
-  `banner_image` text DEFAULT NULL,
-  `car_image` text DEFAULT NULL,
-  `car_name` varchar(255) DEFAULT NULL,
-  `car_quantity` varchar(255) DEFAULT NULL,
-  `visibility` int(11) NOT NULL DEFAULT 1,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `hero_section_cruds`
---
-
-INSERT INTO `hero_section_cruds` (`id`, `tab_heading`, `main_heading`, `banner_image`, `car_image`, `car_name`, `car_quantity`, `visibility`, `created_at`, `updated_at`) VALUES
-(1, 'SOMOS LA MEJOR EMPRESA DE RESERVA DE TAXIS', 'Reserva tu taxi de forma segura hoy ¡Desde cualquier ubicación!', 'uploads/hero-section/1757594263_banner_bg2.jpg', 'uploads/hero-section/1757594263_car_toyota-tacoma-curve.png', 'TOYOTA TACOMA', '50', 1, '2025-09-11 07:37:43', '2025-09-12 05:18:15'),
-(2, 'SOMOS LA MEJOR EMPRESA DE RESERVA DE TAXIS', '¡Garantizamos recogidas puntuales para que nunca tengas que esperar!', 'uploads/hero-section/1757594345_banner_bg2.jpg', 'uploads/hero-section/1757594345_car_ford-curve.png', 'FORD EXPLORER', '80', 1, '2025-09-11 07:39:05', '2025-09-12 05:17:53'),
-(3, 'SOMOS LA MEJOR EMPRESA DE RESERVA DE TAXIS', 'Nuestros conductores amigables priorizan tu seguridad y comodidad.', 'uploads/hero-section/1757594427_banner_bg2.jpg', 'uploads/hero-section/1757594427_car_toyota-sienna-curve.png', 'TOYOTA COROLLA', '60', 1, '2025-09-11 07:40:27', '2025-09-12 05:18:39');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `home_hero_sections`
---
-
-CREATE TABLE `home_hero_sections` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `heading` varchar(255) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `button_link` text DEFAULT NULL,
-  `bg_image` text DEFAULT NULL,
-  `song_image` text DEFAULT NULL,
-  `song_name` text DEFAULT NULL,
-  `song_album` varchar(255) DEFAULT NULL,
-  `song` text DEFAULT NULL,
-  `pc_image_1` text DEFAULT NULL,
-  `pc_image_2` text DEFAULT NULL,
-  `pc_image_3` text DEFAULT NULL,
-  `pc_image_4` text DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `iseeyou_sections`
---
-
-CREATE TABLE `iseeyou_sections` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `heading` varchar(255) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `video` varchar(255) DEFAULT NULL,
-  `video_link` text DEFAULT NULL,
-  `button_text` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `jobs`
 --
 
@@ -888,6 +565,13 @@ CREATE TABLE `jobs` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO `jobs` (`id`, `firstname`, `lastname`, `email`, `phone`, `linkedin_url`, `current_job_place`, `current_job_position`, `current_salary`, `yearofexperince`, `applied_for`, `expected_salary`, `resume_file`, `covering_letter`, `created_at`, `updated_at`) VALUES
+(1, 'Brandon', 'Mejia', 'fizyxybawy@mailinator.com', '+1 (733) 572-1079', 'https://www.papyzunacitygu.me', 'Molestiae dolores cu', 'Vel eiusmod dolor se', 'Quae hic vero tenetu', '2013', 'Odit doloribus digni', 'Nihil quaerat aut in', 'uploads/jobs/1762427471_sample.pdf', 'Voluptatum suscipit', '2025-11-06 06:11:11', '2025-11-06 06:11:11');
 
 -- --------------------------------------------------------
 
@@ -1042,32 +726,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mini_services`
---
-
-CREATE TABLE `mini_services` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `icon` text NOT NULL,
-  `image` text NOT NULL,
-  `visibility` int(11) NOT NULL DEFAULT 1,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `mini_services`
---
-
-INSERT INTO `mini_services` (`id`, `title`, `icon`, `image`, `visibility`, `created_at`, `updated_at`) VALUES
-(1, 'Hospitals and clinics', 'flaticon-taxi-2', 'uploads/mini-services/1757690838_v1.jpg', 1, '2025-09-12 10:27:18', '2025-09-12 10:27:27'),
-(2, 'Transporte regular', 'flaticon-mobile-app', 'uploads/mini-services/1757690920_v2.jpg', 1, '2025-09-12 10:28:40', '2025-09-12 10:28:40'),
-(3, 'Transporte urbano', 'flaticon-taxi-4', 'uploads/mini-services/1757690951_v3.jpg', 1, '2025-09-12 10:29:11', '2025-09-12 10:29:11'),
-(4, 'Traslado al aeropuerto', 'flaticon-driver-3', 'uploads/mini-services/1757691003_v4.jpg', 1, '2025-09-12 10:30:03', '2025-09-12 10:30:03');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `model_has_permissions`
 --
 
@@ -1126,20 +784,6 @@ INSERT INTO `newsbars` (`id`, `title`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `newsletters`
---
-
-CREATE TABLE `newsletters` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `visibility` int(11) NOT NULL DEFAULT 1,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `new_newsletters`
 --
 
@@ -1178,37 +822,6 @@ CREATE TABLE `notifications` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `our_company_cms_pages`
---
-
-CREATE TABLE `our_company_cms_pages` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `tab_title` varchar(500) DEFAULT NULL,
-  `heading` varchar(500) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `button_text` text DEFAULT NULL,
-  `button_link` text DEFAULT NULL,
-  `image` text DEFAULT NULL,
-  `card_title_1` varchar(255) DEFAULT NULL,
-  `card_value_1` varchar(255) DEFAULT NULL,
-  `card_title_2` varchar(255) DEFAULT NULL,
-  `card_value_2` varchar(255) DEFAULT NULL,
-  `card_title_3` varchar(255) DEFAULT NULL,
-  `card_value_3` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `our_company_cms_pages`
---
-
-INSERT INTO `our_company_cms_pages` (`id`, `tab_title`, `heading`, `description`, `button_text`, `button_link`, `image`, `card_title_1`, `card_value_1`, `card_title_2`, `card_value_2`, `card_title_3`, `card_value_3`, `created_at`, `updated_at`) VALUES
-(1, 'Bienvenido a Nuestra Empresa', '¡Tu Socio de Confianza para Viajes Seguros y Fiables!', 'No esperes más, reserva tu viaje hoy. Ya sea un trayecto local o un viaje de larga distancia, estamos aquí para ti. ¡Reserva tu viaje hoy y viaja sin preocupaciones! Priorizamos tu comodidad, seguridad y puntualidad.', 'Reservar un Taxi', 'fgfg', 'uploads/ourcompany/1757587552_man2.png', 'CONDUCTORES EXPERTOS', '510', 'RESERVAS TOTALES', '200', 'CLIENTES FELICES', '150', '2025-09-11 05:38:33', '2025-09-12 07:38:41');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `partners`
 --
 
@@ -1217,21 +830,6 @@ CREATE TABLE `partners` (
   `title` varchar(255) NOT NULL,
   `logo` varchar(255) DEFAULT NULL,
   `visibility` tinyint(1) NOT NULL DEFAULT 1,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `partnership_sections`
---
-
-CREATE TABLE `partnership_sections` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `heading` varchar(255) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `video` text DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1280,49 +878,6 @@ CREATE TABLE `personal_access_tokens` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `prefooter_sections`
---
-
-CREATE TABLE `prefooter_sections` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `heading` varchar(255) NOT NULL,
-  `subheading` varchar(255) NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `privacy_policies`
---
-
-CREATE TABLE `privacy_policies` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `title` varchar(500) NOT NULL,
-  `description` text NOT NULL,
-  `visibility` int(11) NOT NULL DEFAULT 1,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `privacy_policies`
---
-
-INSERT INTO `privacy_policies` (`id`, `title`, `description`, `visibility`, `created_at`, `updated_at`) VALUES
-(1, 'Nuestra Política de Privacidad.', '<p>Queremos que comprenda c&oacute;mo recopilamos, usamos y protegemos la informaci&oacute;n que nos proporciona. Esta pol&iacute;tica de privacidad describe el tipo de informaci&oacute;n que recopilamos, c&oacute;mo la usamos y c&oacute;mo puede controlar c&oacute;mo la compartimos. Si se realizan cambios en esta pol&iacute;tica, actualizaremos esta p&aacute;gina. Le recomendamos que revise esta pol&iacute;tica cada vez que visite nuestro sitio web.</p>', 1, '2025-09-11 05:54:23', '2025-09-12 07:04:04'),
-(2, '¿Qué son las cookies y cómo las utilizamos?', '<p>Las cookies son peque&ntilde;os archivos de datos que se almacenan en su dispositivo y que ayudan a mejorar la funcionalidad del sitio web. Ayudan a rastrear las preferencias del usuario, mejorar su experiencia y habilitar servicios personalizados. La mayor&iacute;a de los navegadores web le permiten controlar la configuraci&oacute;n de las cookies, incluyendo la posibilidad de desactivarlas si lo prefiere.</p>', 1, '2025-09-11 05:54:34', '2025-09-12 07:04:21'),
-(3, '¿Este sitio web comparte la información recopilada?', '<p>No, no compartimos su informaci&oacute;n personal con empresas, socios ni organizaciones externas.</p>', 1, '2025-09-11 05:54:44', '2025-09-12 07:04:35'),
-(4, '¿Cómo puedo darme de baja de los correos electrónicos y comunicaciones?', '<p>Si recibe correos electr&oacute;nicos, SMS o llamadas telef&oacute;nicas promocionales o de marketing y desea darse de baja, cont&aacute;ctenos en transsaetava1@gmail.com. Lo eliminaremos de nuestra lista de correo de inmediato.</p>', 1, '2025-09-11 05:54:55', '2025-09-12 07:04:48'),
-(5, '¿Qué información recopilamos?', '<p>Recopilamos la informaci&oacute;n que nos proporciona voluntariamente al contactarnos por correo electr&oacute;nico, tel&eacute;fono o SMS. Esta informaci&oacute;n puede incluir: su nombre, correo electr&oacute;nico, direcci&oacute;n, n&uacute;mero de tel&eacute;fono y cualquier otro dato que nos proporcione sobre preferencias o consultas. Adem&aacute;s, podemos recopilar datos a trav&eacute;s de cookies para mejorar su experiencia de navegaci&oacute;n. Puede desactivar las cookies en la configuraci&oacute;n de su navegador.</p>', 1, '2025-09-11 05:55:06', '2025-09-12 07:05:01'),
-(6, '¿Almacenas detalles de suscripción de SMS?', '<p>No compartimos n&uacute;meros de tel&eacute;fono SMS ni detalles de suscripci&oacute;n con terceros ni afiliados con fines comerciales.</p>', 1, '2025-09-11 05:55:17', '2025-09-12 07:05:17'),
-(7, '¿Cómo protegemos la privacidad de los niños?', '<p>Proteger la privacidad de los ni&ntilde;os es una prioridad para nosotros. Cumplimos con la Ley de Protecci&oacute;n de la Privacidad Infantil en L&iacute;nea (COPPA). Si un ni&ntilde;o menor de 13 a&ntilde;os ha proporcionado informaci&oacute;n personal identificable, solicitamos a sus padres o tutores que se pongan en contacto con nosotros para eliminarla de inmediato.</p>', 1, '2025-09-11 05:55:29', '2025-09-12 07:05:31'),
-(8, '¿Cómo puedo obtener más información?', '<p>Si tiene alguna pregunta sobre esta pol&iacute;tica de privacidad, env&iacute;enos un correo electr&oacute;nico a transsaetava1@gmail.com o cont&aacute;ctenos a trav&eacute;s de nuestro sitio web.</p>', 1, '2025-09-11 05:58:40', '2025-09-12 07:06:02');
 
 -- --------------------------------------------------------
 
@@ -1413,26 +968,6 @@ INSERT INTO `services` (`id`, `heading`, `slug`, `description`, `image`, `faq_qu
 (13, 'Email Marketing', 'email-marketing', '<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<p>pellentesque vulputate malesuada dictumst fames interdum cursus an te tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum inceptos nam felis penatibus feugiat</p>\n\n<h3>What We Provide</h3>\n\n<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<h3>The Challange</h3>\n\n<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<ul>\n	<li>Various analysis options.</li>\n	<li>Advance Data analysis operation.</li>\n</ul>\n\n<ul>\n	<li>Page Load (time, size, number of requests).</li>\n	<li>Advance Data analysis operation.</li>\n</ul>', 'uploads/services/1761037933_icon-4.png', '[\"Why Is SEO Important For Small Business ?\",\"How Do I Choose The Best SEO Agency\", \"Better Security And Faster Server\"]', '[\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\",\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\",\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\"]', 1, '2025-10-21 13:12:13', '2025-10-21 13:12:13'),
 (14, 'Social Media Marketing', 'social-media-marketing', '<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<p>pellentesque vulputate malesuada dictumst fames interdum cursus an te tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum inceptos nam felis penatibus feugiat</p>\n\n<h3>What We Provide</h3>\n\n<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<h3>The Challange</h3>\n\n<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<ul>\n	<li>Various analysis options.</li>\n	<li>Advance Data analysis operation.</li>\n</ul>\n\n<ul>\n	<li>Page Load (time, size, number of requests).</li>\n	<li>Advance Data analysis operation.</li>\n</ul>', 'uploads/services/1761037948_icon-5.png', '[\"Why Is SEO Important For Small Business ?\",\"How Do I Choose The Best SEO Agency\", \"Better Security And Faster Server\"]', '[\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\",\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\",\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\"]', 1, '2025-10-21 13:12:28', '2025-10-21 13:12:28'),
 (15, 'Better audiences', 'better-audiences', '<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<p>pellentesque vulputate malesuada dictumst fames interdum cursus an te tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum inceptos nam felis penatibus feugiat</p>\n\n<h3>What We Provide</h3>\n\n<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<h3>The Challange</h3>\n\n<p>At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue</p>\n\n<ul>\n	<li>Various analysis options.</li>\n	<li>Advance Data analysis operation.</li>\n</ul>\n\n<ul>\n	<li>Page Load (time, size, number of requests).</li>\n	<li>Advance Data analysis operation.</li>\n</ul>', 'uploads/services/1761037963_icon-6.png', '[\"Why Is SEO Important For Small Business ?\",\"How Do I Choose The Best SEO Agency\", \"Better Security And Faster Server\"]', '[\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\",\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\",\"Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus\"]', 1, '2025-10-21 13:12:43', '2025-10-21 13:12:43');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `shjc`
---
-
-CREATE TABLE `shjc` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `visibility` int(11) NOT NULL DEFAULT 0,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `shjc`
---
-
-INSERT INTO `shjc` (`id`, `visibility`, `created_at`, `updated_at`) VALUES
-(1, 0, '2025-09-27 20:11:26', '2025-09-27 20:11:26');
 
 -- --------------------------------------------------------
 
@@ -1542,23 +1077,11 @@ CREATE TABLE `visit_stats` (
 --
 
 INSERT INTO `visit_stats` (`id`, `home_visits`, `created_at`, `updated_at`) VALUES
-(1, 1968, '2025-09-12 08:07:51', '2025-11-06 12:25:08');
+(1, 1971, '2025-09-12 08:07:51', '2025-11-06 07:09:36');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `about_sections`
---
-ALTER TABLE `about_sections`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `autodeposit_sections`
---
-ALTER TABLE `autodeposit_sections`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `blogs`
@@ -1576,49 +1099,6 @@ ALTER TABLE `business_settings`
 -- Indexes for table `careers`
 --
 ALTER TABLE `careers`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `cms_home_pages`
---
-ALTER TABLE `cms_home_pages`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `cms_service_pages`
---
-ALTER TABLE `cms_service_pages`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `company_details`
---
-ALTER TABLE `company_details`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `company_settings`
---
-ALTER TABLE `company_settings`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `company_settings_country_id_foreign` (`country_id`);
-
---
--- Indexes for table `company_welcomes`
---
-ALTER TABLE `company_welcomes`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `contacts`
---
-ALTER TABLE `contacts`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `contact_cms_pages`
---
-ALTER TABLE `contact_cms_pages`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1659,30 +1139,6 @@ ALTER TABLE `genders`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `hero_sections`
---
-ALTER TABLE `hero_sections`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `hero_section_cruds`
---
-ALTER TABLE `hero_section_cruds`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `home_hero_sections`
---
-ALTER TABLE `home_hero_sections`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `iseeyou_sections`
---
-ALTER TABLE `iseeyou_sections`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `jobs`
 --
 ALTER TABLE `jobs`
@@ -1707,12 +1163,6 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `mini_services`
---
-ALTER TABLE `mini_services`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `model_has_permissions`
 --
 ALTER TABLE `model_has_permissions`
@@ -1733,12 +1183,6 @@ ALTER TABLE `newsbars`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `newsletters`
---
-ALTER TABLE `newsletters`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `new_newsletters`
 --
 ALTER TABLE `new_newsletters`
@@ -1753,21 +1197,9 @@ ALTER TABLE `notifications`
   ADD KEY `notifications_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `our_company_cms_pages`
---
-ALTER TABLE `our_company_cms_pages`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `partners`
 --
 ALTER TABLE `partners`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `partnership_sections`
---
-ALTER TABLE `partnership_sections`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1790,18 +1222,6 @@ ALTER TABLE `personal_access_tokens`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
-
---
--- Indexes for table `prefooter_sections`
---
-ALTER TABLE `prefooter_sections`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `privacy_policies`
---
-ALTER TABLE `privacy_policies`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `profiles`
@@ -1830,12 +1250,6 @@ ALTER TABLE `role_has_permissions`
 ALTER TABLE `services`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `slug` (`slug`) USING HASH;
-
---
--- Indexes for table `shjc`
---
-ALTER TABLE `shjc`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `system_settings`
@@ -1877,18 +1291,6 @@ ALTER TABLE `visit_stats`
 --
 
 --
--- AUTO_INCREMENT for table `about_sections`
---
-ALTER TABLE `about_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `autodeposit_sections`
---
-ALTER TABLE `autodeposit_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
@@ -1907,52 +1309,10 @@ ALTER TABLE `careers`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `cms_home_pages`
---
-ALTER TABLE `cms_home_pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `cms_service_pages`
---
-ALTER TABLE `cms_service_pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `company_details`
---
-ALTER TABLE `company_details`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `company_settings`
---
-ALTER TABLE `company_settings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `company_welcomes`
---
-ALTER TABLE `company_welcomes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `contacts`
---
-ALTER TABLE `contacts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `contact_cms_pages`
---
-ALTER TABLE `contact_cms_pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `contact_submissions`
 --
 ALTER TABLE `contact_submissions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `countries`
@@ -1985,34 +1345,10 @@ ALTER TABLE `genders`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `hero_sections`
---
-ALTER TABLE `hero_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `hero_section_cruds`
---
-ALTER TABLE `hero_section_cruds`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `home_hero_sections`
---
-ALTER TABLE `home_hero_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `iseeyou_sections`
---
-ALTER TABLE `iseeyou_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `languages`
@@ -2033,22 +1369,10 @@ ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
 
 --
--- AUTO_INCREMENT for table `mini_services`
---
-ALTER TABLE `mini_services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
 -- AUTO_INCREMENT for table `newsbars`
 --
 ALTER TABLE `newsbars`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `newsletters`
---
-ALTER TABLE `newsletters`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `new_newsletters`
@@ -2063,21 +1387,9 @@ ALTER TABLE `notifications`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `our_company_cms_pages`
---
-ALTER TABLE `our_company_cms_pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `partners`
 --
 ALTER TABLE `partners`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `partnership_sections`
---
-ALTER TABLE `partnership_sections`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
@@ -2091,18 +1403,6 @@ ALTER TABLE `permissions`
 --
 ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `prefooter_sections`
---
-ALTER TABLE `prefooter_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `privacy_policies`
---
-ALTER TABLE `privacy_policies`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `profiles`
@@ -2121,12 +1421,6 @@ ALTER TABLE `roles`
 --
 ALTER TABLE `services`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
-
---
--- AUTO_INCREMENT for table `shjc`
---
-ALTER TABLE `shjc`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `system_settings`
@@ -2161,12 +1455,6 @@ ALTER TABLE `visit_stats`
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `company_settings`
---
-ALTER TABLE `company_settings`
-  ADD CONSTRAINT `company_settings_country_id_foreign` FOREIGN KEY (`country_id`) REFERENCES `countries` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `model_has_permissions`
