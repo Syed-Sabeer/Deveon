@@ -1766,93 +1766,29 @@ Faq START -->
           <div class="col-lg-8 mx-auto">
             <!-- Accordion START -->
             <div class="accordion accordion-bg-body-light" id="accordionFaq">
-              <!-- Item -->
-              <div class="accordion-item mb-4">
-                <div class="accordion-header font-base" id="heading-1">
-                  <button class="accordion-button fw-semibold rounded" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                    What payment methods do you accept?
-                  </button>
-                </div>
-                <!-- Body -->
-                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
-                  data-bs-parent="#accordionFaq">
-                  <div class="accordion-body pt-0 pt-0">
-                    We accept a variety of secure payment methods, including
-                    major credit and debit cards, bank transfers, and online
-                    payment gateways. Specific options may vary based on your
-                    location and project requirements. Our team will provide
-                    detailed payment instructions during the onboarding
-                    process.
-                  </div>
-                </div>
-              </div>
 
-              <!-- Item -->
-              <div class="accordion-item mb-4">
-                <div class="accordion-header font-base" id="heading-2">
-                  <button class="accordion-button fw-semibold rounded collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                    How can I contact your customer support team?
-                  </button>
-                </div>
-                <!-- Body -->
-                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
-                  data-bs-parent="#accordionFaq">
-                  <div class="accordion-body pt-0">
-                    You can reach our customer support team through multiple
-                    channels. Visit our website and use the Contact Us form,
-                    email us directly, or call our support line. Our team is
-                    available 24/7 to assist with inquiries, technical
-                    support, and service-related questions.
-                  </div>
-                </div>
-              </div>
 
-              <!-- Item -->
+
+            @foreach($faqs as $faq)
               <div class="accordion-item mb-4">
-                <div class="accordion-header font-base" id="heading-3">
+                <div class="accordion-header font-base" id="heading-{{ $loop->index }}">
                   <button class="accordion-button fw-semibold collapsed rounded" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                    How can I contact your customer support team?
+                    data-bs-target="#collapse-{{ $loop->index }}" aria-expanded="false" aria-controls="collapse-{{ $loop->index }}">
+                   {{ $faq->title }}
                   </button>
                 </div>
                 <!-- Body -->
-                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                <div id="collapse-{{ $loop->index }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ $loop->index }}"
                   data-bs-parent="#accordionFaq">
                   <div class="accordion-body pt-0">
-                    Agencies provide a wide range of services depending on
-                    their specialization. Some common services include
-                    advertising campaigns, digital marketing, branding,
-                    creative design, media planning and buying, public
-                    relations, talent management, event planning, and market
-                    research.
+                    {!! $faq->description !!}
                   </div>
                 </div>
               </div>
+              @endforeach
 
-              <!-- Item -->
-              <div class="accordion-item mb-4">
-                <div class="accordion-header font-base" id="heading-4">
-                  <button class="accordion-button fw-semibold collapsed rounded" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                    Do you offer custom solutions for businesses?
-                  </button>
-                </div>
-                <!-- Body -->
-                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4"
-                  data-bs-parent="#accordionFaq">
-                  <div class="accordion-body pt-0">
-                    Yes, we specialize in delivering tailored solutions based
-                    on each client’s unique goals, industry, and budget. Our
-                    team takes the time to understand your specific
-                    requirements and crafts strategies that align with your
-                    vision. From consultation to execution, we ensure every
-                    solution is designed to maximize results and long-term
-                    value.
-                  </div>
-                </div>
-              </div>
+
+
             </div>
             <!-- Accordion END -->
 
@@ -1860,7 +1796,7 @@ Faq START -->
             <p class="heading-color text-center">
               Confused? Our team is ready to assist you! Start a chat for
               quick support.
-              <a href="#" class="hover-underline-animation fw-semibold">Talk to Us</a>
+              <a href="{{ route('contact')}}" class="hover-underline-animation fw-semibold">Talk to Us</a>
             </p>
           </div>
         </div>
@@ -1921,10 +1857,10 @@ CTA START -->
                     <h4 class="mb-5 text-white">
                       Explore Career Opportunities
                     </h4>
-                    <a class="btn btn-sm btn-dark icon-link icon-link-hover" href="/career.html">View open positions<i
+                    <a class="btn btn-sm btn-dark icon-link icon-link-hover" href="{{ route('career')}}">View open positions<i
                         class="bi bi-arrow-right"></i>
                     </a>
-                    <p class="small mb-0">3 jobs are available</p>
+                    <p class="small mb-0">{{ \App\Models\Career::where('visibility', 1)->count() }} jobs are available</p>
                   </div>
                 </div>
               </div>

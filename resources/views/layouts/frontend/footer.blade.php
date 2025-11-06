@@ -38,7 +38,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('career') }}"
                       >Career
-                      <span class="badge bg-primary ms-2">3 jobs</span></a
+                      <span class="badge bg-primary ms-2">{{ \App\Models\Career::where('visibility', 1)->count() }} jobs</span></a
                     >
                   </li>
                   <li class="nav-item">

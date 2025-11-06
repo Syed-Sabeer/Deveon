@@ -11,14 +11,14 @@ use Illuminate\Support\Facades\Log;
 class AboutController extends Controller
 {
     public function index(){
-        $about_details = AboutSection::first();
+
         $partners = Partner::where('visibility', 1)->get();
-        $about_details = AboutSection::first();
-        return view("frontend.about", compact('about_details', 'partners', 'about_details'));
+
+        return view("frontend.about", compact( 'partners'));
     }
 
     public function aboutmajorpowel(){
-     
+
         return view("frontend.about-major-powel");
     }
 
