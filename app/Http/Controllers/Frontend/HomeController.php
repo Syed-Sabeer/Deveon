@@ -35,7 +35,7 @@ public function index()
     $faqs = Faq::where('visibility', 1)->get();
     $partners = Partner::where('visibility', 1)->get();
 
-    return view('frontend.index', compact('hero_section', 'home_page', 'faqs','services','partners'));
+    return view('frontend.index', compact( 'faqs','services','partners'));
 }
 
     public function contactStore(Request $request){
