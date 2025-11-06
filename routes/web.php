@@ -97,6 +97,8 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/privacy-policy', [WebsiteController::class, 'privacyPolicy'])->name('privacy.policy');
 Route::get('/our-company', [WebsiteController::class, 'ourCompany'])->name('our.company');
 Route::get('/faqs', [WebsiteController::class, 'faq'])->name('faq');
+Route::get('/portfolio', [WebsiteController::class, 'portfolio'])->name('portfolio');
+Route::get('/career', [WebsiteController::class, 'career'])->name('career');
 Route::get('/service', [WebsiteController::class, 'service'])->name('service');
 Route::get('/service/{slug}', [WebsiteController::class, 'serviceDetail'])->name('service.detail');
 Route::get('/blogs', [BlogController::class, 'index'])->name('blog.index');

@@ -8,422 +8,585 @@
 @section('content')
 
 
+    <section class="bg-secondary position-relative pb-5 sec-Brands about-brand">
+      <!-- Decoration START -->
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-0 mt-n9 ms-n5">
+        <img src="{{ asset('FrontendAssets/images/elements/grad-shape/blur-decoration.svg')}}" class="blur-7 opacity-2" alt="Grad shape" />
+      </div>
 
-     <!-- Breadcrumb Section Start -->
-     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('{{asset('FrontendAssets/img/breadcrumb.jpg')}}');">
-            <div class="left-shape">
-                <img src="{{asset('FrontendAssets/img/breadcrumb-shape.png')}}" alt="img">
-            </div>
-            <div class="right-shape">
-                <img src="{{asset('FrontendAssets/img/breadcrumb-shape-2.png')}}" alt="img">
-            </div>
-            <div class="container">
-                <div class="page-heading">
-                    <div class="breadcrumb-sub-title">
-                        <h1 class="wow fadeInUp" data-wow-delay=".3s">about us</h1>
-                    </div>
-                    <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                        <li>
-                            <a href="index.html">
-                            Home
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </li>
-                        <li>
-                            about us
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-50 mt-n9 ms-n9">
+        <img src="{{ asset('FrontendAssets/images/elements/grad-shape/blur-decoration.svg')}}" class="blur-8 opacity-1" alt="Grad shape" />
+      </div>
+      <!-- Decoration START -->
+
+      <div class="container position-relative pt-4 pt-sm-5">
+        <!-- Clay decoration -->
+        <div class="position-absolute top-50 start-0 translate-middle mt-5">
+          <img src="{{ asset('FrontendAssets/images/elements/clay-decoration.png')}}" class="solid-stone" alt="Clay-decoration" />
         </div>
 
-        <!-- About Section Start -->
-        <section class="about-section-2 fix section-padding">
-            <div class="bg-shape">
-                <img src="{{asset('FrontendAssets/img/about/bg-shape-2.png')}}" alt="img">
-            </div>
-            <div class="right-shape float-bob-x">
-                <img src="{{asset('FrontendAssets/img/case-studies/right-shaape.png')}}" alt="img">
-            </div>
-            <div class="container">
-                <div class="about-wrapper-2">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="about-image">
-                                <img src="{{asset('FrontendAssets/img/about/01.jpg')}}" alt="img" class="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                                <div class="box-shape float-bob-y">
-                                    <img src="{{asset('FrontendAssets/img/about/box-shape-2.png')}}" alt="img">
-                                </div>
-                                <div class="gap-shape float-bob-x">
-                                    <img src="{{asset('FrontendAssets/img/about/grap-2.png')}}" alt="img">
-                                </div>
-                                <a href="{{route('about')}}" class="circle-button">
-                                    <i class="fa-regular fa-arrow-up-right"></i>
-                                    <span class="text-circle">
-                                        <img src="{{asset('FrontendAssets/img/about/white-text.png')}}" alt="img">
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="about-content">
-                                <div class="section-title">
-                                    <div class="sub-title bg-color-2 wow fadeInUp">
-                                        <span>About Company</span>
-                                    </div>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                        Let’s make something awesome together
-                                    </h2>
-                                </div>
-                                <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                    We're not just another agency – we're your digital growth partners. With
-                                    years of industry experience and a passion for innovation, our team is
-                                    dedicated to delivering measurable results propel your business forward.
-                                </p>
-                                <div class="icon-items-area">
-                                    <div class="icon-items wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="icon">
-                                            <i class="icon-01"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3>Analytics Reporting</h3>
-                                            <p>Collaboratively formulate principle capital. Progressively evolve user </p>
-                                        </div>
-                                    </div>
-                                    <div class="icon-items wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="icon">
-                                            <i class="icon-02"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3>Data Guard Sentinel</h3>
-                                            <p>Collaboratively formulate principle capital. Progressively evolve user </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="about-button">
-                                    <div class="main-button wow fadeInUp" data-wow-delay=".3s">
-                                        <a href="{{route('about')}}"> <span class="theme-btn">ABOUT US MORE </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
-                                    </div>
-                                    <a href="{{route('about')}}" class="link-btn wow fadeInUp" data-wow-delay=".5s">EXPLORE MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Title and buttons START -->
+        <div class="inner-container text-center align-items-center mb-5 mb-md-7" style="margin-top: 0 !important;">
+          <!-- Breadcrumb -->
+          <nav class="mb-2 justify-content-center d-flex" aria-label="breadcrumb">
+            <ol class="breadcrumb pt-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                About us
+              </li>
+            </ol>
+          </nav>
 
-        <!-- Cta Counter Section Start -->
-        <section class="cta-counter-section-3 fix section-bg section-padding bg-cover" style="background-image: url('{{asset('FrontendAssets/img/cta-counter-bg.jpg')}}');">
-            <div class="container">
-                <div class="cta-counter-wrapper-2">
-                    <div class="section-title-area">
-                        <div class="section-title">
-                            <div class="sub-title bg-color-3 wow fadeInUp">
-                                <span>Counter</span>
-                            </div>
-                            <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                                Make your marketing <br> more effective
-                            </h2>
-                        </div>
-                        <div class="counter-box-area">
-                            <div class="counter-text wow fadeInUp" data-wow-delay=".3s">
-                                <h2>
-                                    <span class="count">19.4</span>K
-                                </h2>
-                                <p>Projects Done</p>
-                            </div>
-                            <div class="counter-text wow fadeInUp" data-wow-delay=".5s">
-                                <h2>
-                                    <span class="count">95.2</span>K
-                                </h2>
-                                <p>Happy Clients</p>
-                            </div>
-                            <div class="counter-text wow fadeInUp" data-wow-delay=".7s">
-                                <h2>
-                                    <span class="count">142.6</span>K
-                                </h2>
-                                <p>Team Members</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cta-video-image wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                        <img src="{{asset('FrontendAssets/img/cta-video.jpg')}}" alt="img">
-                        <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-icon video-popup">
-                             <i class="fa-solid fa-play"></i>
-                        </a>
-                    </div>
-                </div>
+          <!-- Title -->
+          <h1 class="display-5 mb-4 position-relative">
+            Elevating <span class="text-primary-grad">Brands</span> with
+            Distinctive Visuals
+            <div class="lava-parent">
+              <div class="lava-lamp">
+                <div class="bubble"></div>
+                <div class="bubble1"></div>
+                <div class="bubble2"></div>
+                <div class="bubble3"></div>
+              </div>
             </div>
-        </section>
+          </h1>
 
-        <!-- Values Section Start -->
-        <section class="value-section fix section-padding section-bg pt-0">
-            <div class="value-shape">
-                <img src="{{asset('FrontendAssets/img/value-shape.png')}}" alt="img">
-            </div>
-            <div class="value-shape-2">
-                <img src="{{asset('FrontendAssets/img/value-shape-2.png')}}" alt="img">
-            </div>
-            <div class="container">
-                <div class="section-title text-center wow fadeInUp" data-wow-delay=".3s">
-                    <h2>Our values</h2>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="value-box-items">
-                            <div class="icon">
-                               <i class="icon-01"></i>
-                            </div>
-                            <div class="content">
-                                <h3>Integrity</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="value-box-items">
-                            <div class="icon">
-                                <i class="icon-02"></i>
-                            </div>
-                            <div class="content">
-                                <h3>Simplicity</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="value-box-items">
-                            <div class="icon">
-                                <i class="icon-03"></i>
-                            </div>
-                            <div class="content">
-                                <h3>Performance</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="value-box-items">
-                            <div class="icon">
-                                <i class="icon-04"></i>
-                            </div>
-                            <div class="content">
-                                <h3>Integrity</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <!-- Buttons -->
+          <!-- <div
+              class="d-md-flex justify-content-center align-items-center py-2">
+              <a
+                href="services-grid.html"
+                class="btn btn-white-shadow mb-4 mb-md-0"
+                >Explore our services</a>
+              <div
+                class="d-flex align-items-center justify-content-center text-start ms-0 ms-md-4">
+                <a
+                  data-glightbox
+                  data-gallery="office-tour"
+                  href="https://www.youtube.com/embed/tXHviS-4ygo"
+                  class="btn btn-lg btn-round btn-dark mb-0 flex-shrink-0 stretched-link"
+                >
+                  <i class="bi bi-play-fill fs-5"></i>
+                </a>
+                <p class="mb-0 ms-3 heading-color" style="max-width: 13rem">
+                  Learn about our journey and growth
+                </p>
+              </div>
+            </div> -->
+        </div>
+        <!-- Title and buttons END -->
 
-        <!-- Team Section Start -->
-        <section class="team-section-33 section-padding">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="team-left-content sticky-style ">
-                            <div class="section-title">
-                                <div class="sub-title bg-color-2 wow fadeInUp">
-                                    <span>Our EXPART TEAM</span>
-                                </div>
-                                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    Use SEO to Drive Growth <br> at Your Business
-                                </h2>
-                            </div>
-                            <div class="array-button wow fadeInUp" data-wow-delay=".5s">
-                                <button class="array-prev"><i class="fa-regular fa-arrow-left-long"></i></button>
-                                <button class="array-next"><i class="fa-regular fa-arrow-right-long"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="swiper team-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="team-card-items mt-0">
-                                        <div class="team-image">
-                                            <img src="{{asset('FrontendAssets/img/team/01.jpg')}}" alt="img">
-                                        </div>
-                                        <div class="team-content">
-                                            <h3><a href="team-details.html">Reful Miya</a></h3>
-                                            <p>CO-Leader</p>
-                                        </div>
-                                        <div class="icon-shape">
-                                            <img src="{{asset('FrontendAssets/img/team/icon-shape.png')}}" alt="img">
-                                            <div class="social-profile">
-                                                <ul>
-                                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                </ul>
-                                                <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="team-card-items mt-0">
-                                        <div class="team-image">
-                                            <img src="{{asset('FrontendAssets/img/team/02.jpg')}}" alt="img">
-                                        </div>
-                                        <div class="team-content">
-                                            <h3><a href="team-details.html">Shikhon Islam</a></h3>
-                                            <p>Web Developer</p>
-                                        </div>
-                                        <div class="icon-shape">
-                                            <img src="{{asset('FrontendAssets/img/team/icon-shape.png')}}" alt="img">
-                                            <div class="social-profile">
-                                                <ul>
-                                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                </ul>
-                                                <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Testimonial Section Start -->
-        <section class="testimonial-section-3 section-padding pt-0">
-            <div class="overlay-shape">
-                <img src="{{asset('FrontendAssets/img/testimonial/overlay-shape.png')}}" alt="img">
-            </div>
-            <div class="overlay-shape-2">
-                <img src="{{asset('FrontendAssets/img/testimonial/overlay-shape-2.png')}}" alt="img">
-            </div>
-            <div class="left-shape">
-                <img src="{{asset('FrontendAssets/img/testimonial/left-shape.png')}}" alt="img">
-            </div>
-            <div class="right-shape">
-                <img src="{{asset('FrontendAssets/img/testimonial/right-shape.png')}}" alt="img">
-            </div>
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="sub-title bg-color-2 wow fadeInUp">
-                        <span>TESTIMONIALS</span>
-                    </div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        What our happy customers <br> are saying
-                    </h2>
-                </div>
-                <div class="testimonial-wrapper-3 style-2">
-                    <div class="client-1">
-                        <img src="{{asset('FrontendAssets/img/testimonial/06.png')}}" alt="img">
-                    </div>
-                    <div class="client-2">
-                        <img src="{{asset('FrontendAssets/img/testimonial/07.png')}}" alt="img">
-                    </div>
-                    <div class="client-3">
-                        <img src="{{asset('FrontendAssets/img/testimonial/08.png')}}" alt="img">
-                    </div>
-                    <div class="client-4">
-                        <img src="{{asset('FrontendAssets/img/testimonial/09.png')}}" alt="img">
-                    </div>
-                    <div class="swiper testimonial-slider-2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-content">
-                                    <div class="icon">
-                                        <img src="{{asset('FrontendAssets/img/testimonial/quote.png')}}" alt="img">
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.
-                                    </p>
-                                    <div class="client-info">
-                                        <div class="client-img">
-                                            <img src="{{asset('FrontendAssets/img/testimonial/05.png')}}" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <h6>Esther Howard</h6>
-                                            <span>Trader, USA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-content">
-                                    <div class="icon">
-                                        <img src="{{asset('FrontendAssets/img/testimonial/quote.png')}}" alt="img">
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.
-                                    </p>
-                                    <div class="client-info">
-                                        <div class="client-img">
-                                            <img src="{{asset('FrontendAssets/img/testimonial/05.png')}}" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <h6>Esther Howard</h6>
-                                            <span>Trader, USA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-content">
-                                    <div class="icon">
-                                        <img src="{{asset('FrontendAssets/img/testimonial/quote.png')}}" alt="img">
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.
-                                    </p>
-                                    <div class="client-info">
-                                        <div class="client-img">
-                                            <img src="{{asset('FrontendAssets/img/testimonial/05.png')}}" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <h6>Esther Howard</h6>
-                                            <span>Trader, USA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> 
+      </div>
+    </section>
+    <!-- =======================
+Hero END -->
 
-        <!-- Cta Section Start -->
-        <section class="cta-section section-padding pb-0">
-            <div class="rokect-shape float-bob-y">
-                <img src="{{asset('FrontendAssets/img/rokect.png')}}" alt="img">
-            </div>
-            <div class="container">
-                <div class="cta-wrapper bg-cover" style="background-image: url('{{asset('FrontendAssets/img/cta-bg.jpg')}}');">
-                    <div class="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                        <img src="{{asset('FrontendAssets/img/cta-img.png')}}" alt="img">
-                    </div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Stay Connected With <br> Cutting Edge IT
-                    </h2>
-                    <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                        <a href="contact.html"> <span class="theme-btn"> talk TO  A SPECIALIST </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
-                    </div>
+    <section class="bg-secondary pt-4 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 mx-auto">
+            <!-- About content START -->
+            <div class="row g-4 g-lg-6 mb-6 mb-md-4 align-items-center">
+              <!-- Images -->
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 position-relative">
+                <!-- vector blur decoration -->
+                <div class="position-absolute bottom-0 start-0 translate-middle-x ms-n5 gradeshape-parent">
+                  <img src="{{ asset('FrontendAssets/images/elements/grad-shape/11.png')}}" class="gradeshape_2" alt="Decoration shape" />
                 </div>
+                <!-- Blur decoration -->
+                <!-- Images -->
+                <!-- Scroll padding -->
+                <div class="un-section"></div>
+                <div class="un-section">
+                  <div class="position-relative z-index-2 collageNew reveal">
+                    <img src="{{ asset('FrontendAssets/images/MSglobal-images/Collagenew.png')}}" class="rounded-4" alt="" />
+                  </div>
+                </div>
+                <div class="un-section"></div>
+              </div>
+
+              <!-- Content -->
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <h2 class="mb-3">
+                  Where Vision Meets
+                  <span class="heading-bg">Technology</span>.
+                </h2>
+                <p>
+                  At Deveon Inc, passion drives performance. Since 2015,
+                  we've built a strong reputation for delivering world-class
+                  IT services, custom application development, and digital
+                  marketing solutions tailored to each client’s vision.
+                </p>
+                <p>
+                  Our team of experienced professionals works at the
+                  intersection of technology, security, and
+                  innovation—transforming ideas into scalable solutions that
+                  perform in today’s demanding digital landscape.
+                </p>
+                <p>
+                  Trusted by Industry Leaders. Backed by Global Partnerships.
+                  We don’t just deliver services—we deliver results. To ensure
+                  maximum performance, reliability, and protection, we work
+                  closely with a network of industry-leading partners,
+                  including:
+                </p>
+                <p>
+                  Our client-centric approach ensures every solution is
+                  aligned with your business goals. From initial consultation
+                  to final delivery, we prioritize collaboration,
+                  transparency, and measurable outcomes—empowering
+                  organizations to thrive in a fast-evolving digital world.
+                </p>
+                <a class="btn btn-primary icon-link icon-link-hover mt-3" href="#">Explore our work<i
+                    class="bi bi-arrow-right"></i>
+                </a>
+              </div>
             </div>
-        </section>
+            <!-- About content END -->
+
+            <!-- Features START -->
+            <div class="row g-4 g-lg-5">
+              <!-- Feature item -->
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="tech-card">
+                  <h6 class="mb-2">
+                    <i class="bi bi-lightning-charge-fill text-success me-2"></i>Technology That Drives Us
+                  </h6>
+                  <p>
+                    We partner with Microsoft Azure, AWS, and Google Cloud for
+                    scalable cloud and AI solutions, while Cloudflare,
+                    Fortinet, Cisco, Trend Micro, and Bitdefender provide
+                    advanced security and performance.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature item -->
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="tech-card">
+                  <h6 class="mb-2">
+                    <i class="bi bi-rocket-takeoff-fill text-pink me-2"></i>Strategic Partnerships
+                  </h6>
+                  <p>
+                    Our strategic alliances deliver full IT ecosystems—from
+                    hosting to cybersecurity and digital
+                    transformation—providing secure, scalable solutions
+                    tailored to you.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature item -->
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="tech-card">
+                  <h6 class="mb-2">
+                    <i class="bi bi-bullseye text-warning me-2"></i>Proven
+                    Excellence
+                  </h6>
+                  <p>
+                    With 15+ years of success, we offer 24/7 support, a
+                    security-first mindset, and custom strategies to help
+                    startups grow and enterprises scale.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Features END -->
+          </div>
+        </div>
+        <!-- Row END -->
+      </div>
+    </section>
+    <!-- =======================
+About START -->
+    <!-- <section class="bg-secondary pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+
+				<div class="row g-4 g-lg-6 mb-6 mb-md-8">
+
+					<div class="col-md-7 position-relative">
+
+						<div class="position-absolute bottom-0 start-50 translate-middle-x ms-n5">
+							<img src="{{ asset('FrontendAssets/images/elements/grad-shape/11.png')}}" class="blur-2" alt="Decoration shape">
+						</div>
+
+						<div class="position-absolute top-0 start-50 translate-middle-x ms-7">
+							<img src="{{ asset('FrontendAssets/images/elements/grad-shape/blur-decoration.svg')}}" class="opacity-3 blur-8" alt="Grad shape">
+						</div>
+
+						<div class="row position-relative">
+							<div class="col-sm-6">
+								<img src="{{ asset('FrontendAssets/images/about/08.jpg')}}" class="rounded-4" alt="">
+							</div>
+							<div class="col-sm-6 mt-5 mt-sm-8">
+								<img src="{{ asset('FrontendAssets/images/about/09.jpg')}}" class="rounded-4" alt="">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-5">
+						<h2 class="mb-3">Crafting stunning visuals</h2>
+						<p>We specialize in elevating brands through distinctive solutions that captivate and inspire.</p>
+						<p>Our creative team combines innovative design with <b>strategic insights to deliver visuals</b> that make a lasting impact. From concept to execution, we ensure your brand stands out in a crowded marketplace.</p>
+						<p>We focus on creating high-impact visuals that leave a lasting impression.</p>
+						<a class="btn btn-primary icon-link icon-link-hover mt-3" href="portfolio-grid.html">Explore our work<i class="bi bi-arrow-right"></i> </a>
+					</div>
+				</div>
+
+				 <div class="row g-4 g-lg-5">
+
+					<div class="col-md-4">
+						<h6 class="mb-2"><i class="bi bi-lightning-charge-fill text-success me-2"></i>Our mission</h6>
+						<p>We empower brands with visually compelling solutions that drive engagement and leave a lasting impact.</p>
+					</div>
+
+
+					<div class="col-md-4">
+						<h6 class="mb-2"><i class="bi bi-rocket-takeoff-fill text-pink me-2"></i>Our vision</h6>
+						<p>Folio is to be recognized as a leading force in the world of visual communication.</p>
+					</div>
+
+
+					<div class="col-md-4">
+						<h6 class="mb-2"><i class="bi bi-bullseye text-warning me-2"></i>Our goal</h6>
+						<p>Our aim is to not only meet our clients' objectives but to surpass them, earning their trust and loyalty along the way.</p>
+					</div>
+				 </div>
+
+			</div>
+		</div>
+	</div>
+</section> -->
+    <!-- =======================About END -->
+
+    <style>
+    .card-img-scale-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-scale-wrapper img {
+  transition: transform 0.4s ease;
+}
+
+.card-img-scale-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.icon-lg {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .ps-lg-4 {
+    padding-left: 0 !important;
+    margin-top: 2rem;
+  }
+}
+
+/* Smooth animations */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-tops {
+    height: 200px;
+    /* width: 200px; */
+    object-fit: cover;
+
+    display: block;
+    margin: auto;
+}
+
+    </style>
+
+    <!-- ======================= Team START -->
+
+    <section class="position-relative pt-4 pb-xl-8 overflow-hidden">
+      <!-- Blur decoration -->
+      <div class="position-absolute end-0 top-0">
+        <img src="{{ asset('FrontendAssets/images/elements/grad-shape/blur-decoration-2.svg')}}" class="opacity-1 blur-8 h-300px rotate-335"
+          alt="Grad shape" />
+      </div>
+      <!-- Blur decoration -->
+      <div class="position-absolute start-0 top-0">
+        <img src="{{ asset('FrontendAssets/images/elements/grad-shape/blur-decoration-2.svg')}}" class="opacity-2 blur-9 h-300px rotate-335"
+          alt="Grad shape" />
+      </div>
+      <!-- Box pattern -->
+      <div class="position-absolute top-0 start-0">
+        <img src="{{ asset('FrontendAssets/images/elements/bg-pattern.svg')}}" style="opacity: 0.05" alt="bg pattern" />
+      </div>
+
+      <div class="container position-relative">
+        <!-- Title and content -->
+       <div class="row">
+  <div class="col-md-8 mx-auto text-center">
+    <h1 class="mb-4">
+      <span class="heading-bg">Leadership</span> & Vision
+    </h1>
+    <p class="mb-0">
+      Meet the visionary behind Deveon Inc—driving innovation, excellence, and transformative digital solutions since 2015.
+    </p>
+  </div>
+</div>
+      </div>
+    </section>
+    <!-- ======================= Team START -->
+    <!-- ======================= Team START -->
+<section class="py-0 team_sec position-relative">
+  <!-- Right side svg decoration -->
+  <div class="position-absolute top-25 start-0 translate-middle z-index-2 ms-5 ms-xl-9 mt-5 d-none d-sm-block">
+    <img src="{{ asset('FrontendAssets/images/elements/grad-shape/10.png')}}" class="testi-vectors h-500px h-xl-700px rtl-flip" alt="" />
+  </div>
+
+  <!-- Grad blur decoration -->
+  <div class="position-absolute end-0 top-0 d-none d-sm-block">
+    <img src="{{ asset('FrontendAssets/images/elements/grad-shape/12.png')}}" class="stone-2" alt="Decoration shape" />
+  </div>
+
+  <div class="container">
+    <!-- Owner's Message - Premium Side by Side Layout -->
+    <div class="row g-4 g-lg-5 align-items-center mb-6">
+      <!-- Left Side - Image -->
+      <div class="col-lg-5">
+        <div class="position-relative">
+          <!-- Decorative gradient background -->
+          <div class="position-absolute top-50 start-50 translate-middle w-100 h-100">
+            <div class="bg-primary bg-opacity-10 rounded-4 blur-3" style="width: 90%; height: 90%; margin: auto;"></div>
+          </div>
+
+          <!-- Main image card -->
+          <div class="card border-0 shadow-lg rounded-4 overflow-hidden position-relative">
+            <div class="card-img-scale-wrapper">
+              <!-- Overlay gradient -->
+              <div class="position-absolute bottom-0 start-0 end-0 p-4"
+                   style="background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);">
+                <h4 class="text-white mb-1">Syed Sabeer Faisal</h4>
+                <p class="text-white-50 mb-0">Founder & CEO</p>
+
+                <!-- Social links -->
+                <div class="mt-3">
+                  <a class="btn btn-sm btn-round bg-white bg-opacity-25 backdrop-blur me-2" href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram text-white"></i>
+                  </a>
+                  <a class="btn btn-sm btn-round bg-white bg-opacity-25 backdrop-blur me-2" href="#" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin text-white"></i>
+                  </a>
+                  <a class="btn btn-sm btn-round bg-white bg-opacity-25 backdrop-blur" href="#" aria-label="Twitter">
+                    <i class="bi bi-twitter-x text-white"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <img src="{{ asset('FrontendAssets/images/MSglobal-images/team-images/saqibb.jpg')}}"
+                   class="card-img-tops"
+                   alt="Syed Sabeer Faisal - Founder & CEO"
+                   style="height: 600px; object-fit: cover;" />
+            </div>
+          </div>
+
+          <!-- Floating stats badge -->
+          <div class="position-absolute top-0 end-0 mt-n3 me-n3 d-none d-md-block">
+            <div class="card border-0 shadow-lg rounded-3 p-3 text-center" style="min-width: 120px;">
+              <h3 class="text-primary mb-0">10+</h3>
+              <small class="text-muted">Years Leading</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Message -->
+      <div class="col-lg-7">
+        <div class="ps-lg-4">
+
+
+          <!-- Heading -->
+          <h2 class="mb-4">
+            A Message from <span class="text-primary-grad">Our Founder</span>
+          </h2>
+
+          <!-- Lead quote -->
+          <p class="lead fw-semibold mb-4" style="font-size: 1.15rem; line-height: 1.6;">
+            "At Deveon Inc, we don't just build software we craft digital experiences that transform businesses and empower brands to thrive in an ever evolving digital landscape."
+          </p>
+
+          <!-- Main content -->
+          <div class="mb-4">
+            <p class="mb-3">
+              Since founding this company in 2015, my vision has been clear: to deliver world-class digital solutions that combine cutting-edge technology with strategic creativity. From <strong>custom software development</strong> and <strong>mobile applications</strong> to <strong>stunning graphic design</strong>, <strong>branding</strong>, and <strong>digital marketing</strong> we bring ideas to life with precision, passion, and purpose.
+            </p>
+            <p class="mb-3">
+              Our team of dedicated professionals doesn't just meet expectations we exceed them. We believe in building lasting partnerships with our clients, understanding their unique challenges, and delivering solutions that drive real, measurable results.
+            </p>
+            <p class="mb-0">
+              Whether you're a startup looking to make your mark or an enterprise seeking digital transformation, we're here to turn your vision into reality.
+            </p>
+          </div>
+
+          <!-- Key highlights -->
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <div class="icon-lg bg-success bg-opacity-10 rounded-circle flex-shrink-0 me-3">
+                  <i class="bi bi-check-circle-fill text-success"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0">200+ Projects</h6>
+                  <small class="text-muted">Successfully Delivered</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <div class="icon-lg bg-primary bg-opacity-10 rounded-circle flex-shrink-0 me-3">
+                  <i class="bi bi-people-fill text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0">Global Clients</h6>
+                  <small class="text-muted">Across 10+ Countries</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Signature -->
+          <div class="pt-4 border-top">
+            <div class="d-flex align-items-center">
+              <div class="me-3">
+                <h5 class="mb-0 text-primary">Syed Sabeer Faisal</h5>
+                <small class="text-muted">Founder & CEO, Deveon Inc</small>
+              </div>
+              <div class="ms-auto">
+                <img src="{{ asset('FrontendAssets/images/MSglobal-images/logo.png')}}"
+                     alt="Deveon Inc"
+                     style="height: 40px; opacity: 0.6;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =======================Team END -->
+    <!-- =======================Team END -->
+
+    <!-- =======================Team END -->
+
+    <!-- =======================Clients START -->
+
+    <!-- =======================Clients END -->
+
+    <!-- =======================Gallery START -->
+    <!-- <section class="pt-5">
+        <div class="container">
+          <div class="row g-lg-5">
+            <div class="col-md-7 mb-5 mb-md-0">
+              <img
+                src="{{ asset('FrontendAssets/images/about/10.jpg')}}"
+                class="rounded-4 mb-5"
+                alt="office image"
+              />
+              <div class="about2">
+                <img
+                  src="{{ asset('FrontendAssets/images/MSglobal-images/about2.jpg')}}"
+                  class="rounded-4 w-75 d-flex ms-auto me-md-5"
+                  alt="office image"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 ms-auto">
+              <div class="text-end mb-5 mb-md-6">
+                <h6 class="mb-0">Since</h6>
+                <span id="counter" class="display-2 text-primary-grad"
+                  >2000</span
+                >
+              </div>
+              <img
+                src="{{ asset('FrontendAssets/images/MSglobal-images/building.png')}}"
+                class="rounded-4 gradeshape_2"
+                alt="office image"
+              />
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- =======================Gallery END -->
+
+    <!-- =======================CTA START -->
+    <section class="bg-secondary position-relative overflow-hidden mt-5 pb-5">
+      <!-- Curve decoration -->
+      <span class="position-absolute top-0 start-0 mt-n5 d-none">
+        <svg class="fill-body about-svg" width="1930" height="137" viewBox="0 0 1930 137" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M464.909 117.12C228.685 132.607 108.971 82.5335 0 51.0476V1.5L1930 0V26.649V132.607C1873.32 98.4636 1645.24 119.618 1488.21 132.607C1319.34 146.576 1149.46 119.696 1051.95 103.318C837.339 67.2694 668.231 103.79 464.909 117.12Z">
+          </path>
+        </svg>
+      </span>
+
+      <div class="container pt-5">
+        <div class="row g-4 align-items-center">
+          <!-- Title and content -->
+          <div class="col-md-5">
+            <h2 class="mb-3 position-relative">Stay updated with our newsletter
+              <div class="newsletter-loader">
+                <div class="loader">
+                  <div class="loader__bar"></div>
+                  <div class="loader__bar"></div>
+                  <div class="loader__bar"></div>
+                  <div class="loader__bar"></div>
+                  <div class="loader__bar"></div>
+                  <div class="loader__ball"></div>
+                </div>
+              </div>
+            </h2>
+            <p class="mb-0">
+              Our newsletter provides valuable content designed to help you
+              stay ahead in your field.
+            </p>
+          </div>
+
+          <!-- Input -->
+          <div class="col-md-6 col-xl-5 ms-auto">
+            <div class="bg-body rounded-2 position-relative z-index-2 p-2 mb-2">
+              <form class="input-group">
+                <input class="form-control bg-transparent border-0 me-1" type="email"
+                  placeholder="Enter your email address" />
+                <button type="button" class="btn btn-primary rounded-2 mb-0">
+                  Subscribe!
+                </button>
+              </form>
+            </div>
+            <div class="form-text">✌️ No Spam — We Promise!</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

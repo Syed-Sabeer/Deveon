@@ -23,7 +23,15 @@ public function privacyPolicy(){
     return view('frontend.privacy-policy', compact('privacyPolicy'));
 }
 
+public function portfolio(){
 
+    return view('frontend.portfolio');
+}
+
+public function career(){
+
+    return view('frontend.career');
+}
 public function faq(){
     $faqs = Faq::all();
     return view('frontend.faqs', compact('faqs'));

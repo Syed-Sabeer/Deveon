@@ -61,116 +61,20 @@
               <ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
                 <!-- Nav item -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="index.html">Home</a>
-
-                  <!-- <div class="dropdown-menu dropdown-menu-size-lg overflow-hidden p-0">
-							<div class="row px-3 py-4">
-
-								<div class="col-sm-6">
-									<ul class="list-unstyled">
-										<li> <a class="dropdown-item" href="index.html">Classic Default</a> </li>
-										<li> <a class="dropdown-item active" href="#">Software Company</a> </li>
-										<li> <a class="dropdown-item" href="index-finance-consulting.html">Finance Consulting</a> </li>
-										<li> <a class="dropdown-item" href="index-ai-agency.html">AI Agency</a> </li>
-										<li> <a class="dropdown-item" href="index-product-landing.html">Product Landing</a> </li>
-									</ul>
-								</div>
+                    <a class="nav-link" href="{{ route('home') }}">Home</a>
 
 
-								<div class="col-sm-6">
-									<ul class="list-unstyled">
-										<li> <a class="dropdown-item" href="index-saas.html">SaaS</a> </li>
-										<li> <a class="dropdown-item" href="index-ai-chatbot.html">SaaS AI Chatbot</a> </li>
-										<li> <a class="dropdown-item" href="index-application-showcase.html">Application Showcase</a> </li>
-										<li> <a class="dropdown-item" href="index-personal-portfolio.html">Personal Portfolio</a> </li>
-										<li> <a class="dropdown-item" href="index-blog.html">Blog home</a> </li>
-									</ul>
-								</div>
-							</div>
-
-
-							 <div class="h-200px position-relative" style="background:url(assets/images/elements/nav-cta.jpg) no-repeat; background-size:cover; background-position:center;">
-
-								 <div class="bg-overlay bg-dark bg-opacity-10"></div>
-							 </div>
-						</div> -->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-v1.html">About Us</a>
+                  <a class="nav-link" href="{{ route('about') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio-grid.html">Portfolio</a>
+                  <a class="nav-link" href="{{ route('portfolio') }}">Portfolio</a>
                 </li>
 
                 <!-- Nav item -->
                 <li class="nav-item dropdown">
-                  <!-- <a class="nav-link " href="portfolio-grid.html" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-									aria-haspopup="true" aria-expanded="false">Portfolio</a> -->
-                  <!-- <a class="nav-link " href="portfolio-grid.html">Portfolio</a> -->
-                  <!-- <ul class="dropdown-menu">
 
-							<li class="dropdown dropend">
-								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">About</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="#">About v.1</a> </li>
-									<li> <a class="dropdown-item" href="about-v2.html">About v.2</a> </li>
-									<li> <a class="dropdown-item" href="services-grid.html">Services Grid</a></li>
-									<li> <a class="dropdown-item" href="services-list.html">Services List</a></li>
-									<li> <a class="dropdown-item" href="#">Service Single</a></li>
-									<li> <a class="dropdown-item" href="team.html">Team</a></li>
-									<li> <a class="dropdown-item" href="#">Career <span class="badge text-bg-success ms-2">2 Job</span></a></li>
-									<li> <a class="dropdown-item" href="career-single.html">Career Single</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="contact-us-v1.html">Contact Us v1</a> </li>
-							<li> <a class="dropdown-item" href="#">Contact Us v2</a> </li>
-							<li> <a class="dropdown-item" href="#">Pricing v1</a> </li>
-							<li> <a class="dropdown-item" href="pricing-v2.html">Pricing v2</a> </li>
-
-
-							<li class="dropdown dropend">
-								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Saas pages</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="feature-single.html">Feature Single</a> </li>
-									<li> <a class="dropdown-item" href="integrations.html">Integrations</a> </li>
-									<li> <a class="dropdown-item" href="integration-single.html">Integrations Single</a> </li>
-								</ul>
-							</li>
-
-
-							<li class="dropdown dropend">
-								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Portfolio</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="#">Portfolio Grid</a> </li>
-									<li> <a class="dropdown-item" href="#">Portfolio List</a> </li>
-									<li> <a class="dropdown-item" href="portfolio-modern.html">Portfolio Modern</a> </li>
-									<li> <a class="dropdown-item" href="#">Portfolio case study v1</a> </li>
-									<li> <a class="dropdown-item" href="#">Portfolio case study v2</a> </li>
-								</ul>
-							</li>
-
-							<li class="dropdown dropend">
-								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="blog-minimal.html">Blog Minimal</a> </li>
-									<li> <a class="dropdown-item" href="blog-single.html">Blog Single</a> </li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="error-404.html">Error 404</a> </li>
-							<li> <a class="dropdown-item" href="coming-soon.html">Coming soon</a> </li>
-
-
-							<li class="dropdown dropend">
-								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Authentication</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="sign-in.html">Sign in</a> </li>
-									<li> <a class="dropdown-item" href="sign-up.html">Sign up</a> </li>
-									<li> <a class="dropdown-item" href="forgot-password.html">Forgot Password</a> </li>
-								</ul>
-							</li>
-						</ul> -->
                 </li>
 
                 <!-- Nav item -->
@@ -261,98 +165,17 @@
                         </div>
                       </div>
 
-                      <!-- <div class="col">
-									<div class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex">
 
-											<div class="icon-md bg-pink bg-opacity-15 text-pink rounded flex-shrink-0"><i class="bi bi-stickies fs-6"></i></div>
-
-											<div class="mx-3">
-												<p class="stretched-link heading-color fw-bold mb-0">Snippets</p>
-												<p class="mb-0 text-body small">Development guides for building projects with Folio</p>
-											</div>
-										</div>
-
-										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="#" target="_blank"><i class="bi bi-chevron-right"></i> </a>
-									</div>
-								</div>
-
-
-								<div class="col">
-									<div class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex">
-
-											<div class="icon-md bg-success bg-opacity-15 text-success rounded flex-shrink-0"><i class="bi bi-bullseye fs-6"></i></div>
-
-											<div class="mx-3">
-												<p class="stretched-link heading-color fw-bold mb-0">Changelog</p>
-												<p class="mb-0 text-body small">Recent feature release and announcement.</p>
-											</div>
-										</div>
-
-										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="#" target="_blank"><i class="bi bi-chevron-right"></i> </a>
-									</div>
-								</div>
-
-
-								<div class="col">
-									<div class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex">
-
-											<div class="icon-md bg-warning bg-opacity-15 text-warning rounded flex-shrink-0"><i class="bi bi-mask fs-6"></i></div>
-
-											<div class="mx-3">
-												<p class="stretched-link heading-color fw-bold mb-0">Playwright tips</p>
-												<p class="mb-0 text-body small">Tips and In-depth guide for headless browser automation</p>
-											</div>
-										</div>
-
-										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="#" target="_blank"><i class="bi bi-chevron-right"></i> </a>
-									</div>
-								</div>
-
-								<div class="col">
-									<div class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex">
-
-											<div class="icon-md bg-info bg-opacity-15 text-info rounded flex-shrink-0"><i class="bi bi-grid-fill fs-6"></i></div>
-
-											<div class="mx-3">
-												<p class="stretched-link heading-color fw-bold mb-0">Integrations</p>
-												<p class="mb-0 text-body small">Taking advantage of integrations with other services.</p>
-											</div>
-										</div>
-
-										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="integrations.html" target="_blank"><i class="bi bi-chevron-right"></i> </a>
-									</div>
-								</div>
-
-
-								<div class="col">
-									<div class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
-										<div class="d-flex">
-
-											<div class="icon-md bg-purple bg-opacity-15 text-purple rounded flex-shrink-0"><i class="bi bi-chat-dots fs-6"></i></div>
-
-											<div class="mx-3">
-												<p class="stretched-link heading-color fw-bold mb-0">Supports</p>
-												<p class="mb-0 text-body small">Need help? Our customers support is there to help you.</p>
-											</div>
-										</div>
-
-										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="#" target="_blank"><i class="bi bi-chevron-right"></i> </a>
-									</div>
-								</div> -->
                     </div>
                   </div>
                 </li>
 
                 <!-- Nav item -->
                 <li class="nav-item">
-                  <a class="nav-link" href="career.html">Careers</a>
+                  <a class="nav-link" href="{{ route('career') }}">Careers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact-us-v1.html">Contact us</a>
+                  <a class="nav-link" href="{{ route('contact') }}">Contact us</a>
                 </li>
               </ul>
             </div>

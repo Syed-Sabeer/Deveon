@@ -2,261 +2,344 @@
 
 
 @section('css')
-<style>
 
-.checkbox-container {
-    display: flex;
-    align-items: flex-start;
-    cursor: pointer;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    font-size: 14px;
-    line-height: 1.5;
-    user-select: none;
-}in
-
-.checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.checkbox-container:hover input ~ .checkmark {
-    background-color: #f0f0f0;
-    border-color: #007bff;
-}
-
-.checkbox-container input:checked ~ .checkmark {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.checkbox-container input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.checkbox-container .checkmark:after {
-    left: 6px;
-    top: 2px;
-    width: 6px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-}
-
-
-
-.privacy-link {
-    color: #007bff;
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-.privacy-link:hover {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-/* Error styling for unchecked checkbox */
-.checkbox-container.error .checkmark {
-    border-color: #dc3545;
-    background-color: #f8d7da;
-}
-
-</style>
 @endsection
 
 @section('content')
 
-
-        <!-- Breadcrumb Section Start -->
-        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('{{asset('FrontendAssets/img/breadcrumb.jpg')}}');">
-            <div class="left-shape">
-                <img src="{{asset('FrontendAssets/img/breadcrumb-shape.png')}}" alt="img">
-            </div>
-            <div class="right-shape">
-                <img src="{{asset('FrontendAssets/img/breadcrumb-shape-2.png')}}" alt="img">
-            </div>
-            <div class="container">
-                <div class="page-heading">
-                    <div class="breadcrumb-sub-title">
-                        <h1 class="wow fadeInUp" data-wow-delay=".3s">Contact Us</h1>
-                    </div>
-                    <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                        <li>
-                            <a href="{{route('home')}}">
-                            Home
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </li>
-                        <li>
-                            Contact Us
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <section
+        class="bg-dark position-relative overflow-hidden"
+        data-bs-theme="dark"
+      >
+        <!-- Blur decoration -->
+        <div class="position-absolute bottom-0 end-0 mb-n9">
+          <img
+            src="{{ asset('FrontendAssets/images/elements/grad-shape/blur-decoration-2.svg')}}"
+            class="opacity-2 blur-9"
+            alt="Grad shape"
+          />
         </div>
 
-        <!-- Contact Info Section Start -->
-        <section class="contact-info-section fix section-padding">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="contact-info-items text-center active">
-                            <div class="icon">
-                               <i class="icon-09"></i>
-                            </div>
-                            <div class="content">
-                                <h3>Our Address</h3>
-                                <p>
-                                    {{$business_settings->address}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="contact-info-items text-center">
-                            <div class="icon">
-                                <i class="icon-10"></i>
-                            </div>
-                            <div class="content">
-                                <h3><a href="mailto:{{$business_settings->email}}">{{$business_settings->email}}</a></h3>
-                                <p>
-                                    Email us anytime for anykind <br>
-                                    ofquety.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container position-relative pt-4 pt-sm-5">
+          <!-- Title and content -->
+          <span class="h2">👋</span>
+          <h1 class="display-5 mt-3">Let's Connect</h1>
 
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="contact-info-items text-center">
-                            <div class="icon">
-                                <i class="icon-11"></i>
-                            </div>
-                            <div class="content">
-                                <h3>Hot:<a href="tel:{{$business_settings->phone}}">{{$business_settings->phone}}</a></h3>
-                                <p>
-                                    Call us any kind suppor,we <br>
-                                    will wait for it.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+          <p class="mb-1">We’re here to help</p>
+          <p>Support hours: <span class="text-primary fw-bold">24/7</span></p>
+        </div>
+      </section>
+      <!-- =======================Hero END -->
+
+      <!-- =======================Contact info START -->
+      <section class="pt-0 mt-n6 mt-lg-n7 mt-xl-n8">
+        <div class="container">
+          <!-- Contact detail START -->
+          <div class="row g-4 g-lg-5">
+            <!-- Call us -->
+            <div class="col-md-4">
+              <div class="card bg-secondary rounded-4 p-4 h-100">
+                <!-- Card body -->
+                <div class="card-body p-0">
+                  <!-- Icon -->
+                  <div class="icon-lg bg-pink text-white rounded-circle mb-3">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <h6>Call us</h6>
+                  <p class="mb-0">
+                    Speak with a member of our team. We’re always ready to
+                    assist you.
+                  </p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact Section Start -->
-        <section class="contact-section-33 fix section-padding pt-0">
-            <div class="container">
-                <div class="contact-wrapper-2">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="map-items">
-                                <div class="googpemap">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13431953.536479754!2d-79.74858694999999!3d34.72319649999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2f77bdf651ad614d%3A0x2592577eebf7611f!2sHorizon%20Canada%20Inc!5e0!3m2!1sen!2s!4v1757928874993!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="contact-content">
-                                <h2>Ready to Get Started?</h2>
-                                <p>
-                                    Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor ultrices,
-                                </p>
-                                <form action="{{route('contact.store')}}" id="contact-form" method="POST" class="contact-form-items">
-                                    @csrf
-                                    <div class="row g-4">
-                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                            <div class="form-clt">
-                                                <span>Full name*</span>
-                                                <input type="text" name="fullname" id="fullname" placeholder="Your Name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                            <div class="form-clt">
-                                                <span>Your Email*</span>
-                                                <input type="email" name="email" id="email" placeholder="Your Email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                            <div class="form-clt">
-                                                <span>Phone</span>
-                                                <input type="text" name="phone" id="phone" placeholder="Your Phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                            <div class="form-clt">
-                                                <span>Subject *</span>
-                                                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
-                                            <div class="form-clt">
-                                                <span>Write Message*</span>
-                                                <textarea name="message" id="message" placeholder="Write Message" required></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
-                                            <button type="submit" class="theme-btn" id="submit-btn">
-                                                Send Message <i class="fa-solid fa-arrow-right-long"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Card footer -->
+                <div class="card-footer bg-transparent p-0 pt-3">
+                  <a href="#" class="text-primary-grad">+1 (905) 514-8474</a>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Cta Section Start -->
-        <section class="cta-section section-padding pb-0">
-            <div class="rokect-shape float-bob-y">
-                <img src="{{asset('FrontendAssets/img/rokect.png')}}" alt="img">
-            </div>
-            <div class="container">
-                <div class="cta-wrapper bg-cover" style="background-image: url('{{asset('FrontendAssets/img/cta-bg.jpg')}}');">
-                    <div class="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                        <img src="{{asset('FrontendAssets/img/cta-img.png')}}" alt="img">
-                    </div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Stay Connected With <br> Cutting Edge IT
-                    </h2>
-                    <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                        <a href="contact.html"> <span class="theme-btn"> talk TO  A SPECIALIST </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
-                    </div>
+            <!-- Mail us -->
+            <div class="col-md-4">
+              <div class="card bg-secondary rounded-4 p-4 h-100">
+                <!-- Card body -->
+                <div class="card-body p-0">
+                  <!-- Icon -->
+                  <div
+                    class="icon-lg bg-primary text-white rounded-circle mb-3"
+                  >
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <h6>Mail us</h6>
+                  <p class="mb-0">
+                    We’re prompt and aim to respond to all inquiries within 24
+                    hours.
+                  </p>
                 </div>
+                <!-- Card footer -->
+                <div class="card-footer bg-transparent p-0 pt-3">
+                  <a href="#" class="text-primary-grad">info@deveondynamics.com</a>
+                </div>
+              </div>
             </div>
-        </section>
+
+            <!-- Support -->
+            <div class="col-md-4">
+              <div class="card bg-secondary rounded-4 p-4 h-100">
+                <!-- Card body -->
+                <div class="card-body p-0">
+                  <!-- Icon -->
+                  <div
+                    class="icon-lg bg-warning text-white rounded-circle mb-3"
+                  >
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <h6>Support</h6>
+                  <p class="mb-0">
+                    Check out helpful resources, FAQs and developer tools.
+                  </p>
+                </div>
+                <!-- Card footer -->
+                <div class="card-footer bg-transparent p-0 pt-3">
+                  <a
+                    class="btn btn-sm btn-white-shadow icon-link icon-link-hover"
+                    href="#"
+                    >Chat now<i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact detail END -->
+        </div>
+      </section>
+      <!-- =======================Contact info END -->
+
+      <!-- =======================Contact form START -->
+      <section class="position-relative pt-0">
+        <!-- vector blur decoration -->
+        <div
+          class="position-absolute bottom-0 start-0 translate-middle-x ms-n5 gradeshape-parent"
+        >
+          <img
+            src="{{ asset('FrontendAssets/images/elements/grad-shape/11.png')}}"
+            class="gradeshape_2"
+            alt="Decoration shape"
+          />
+        </div>
+
+        <div class="container bg-secondary-grad rounded-4 p-4">
+          <div class="inner-container-small">
+            <!-- Title -->
+            <h1 class="fw-bold mb-2 lh-base text-center">
+              <i class="bi bi-emoji-smile me-2"></i>Say
+              <span
+                class="cd-headline clip big-clip is-full-width text-primary-grad mb-0"
+              >
+                <span
+                  class="typed"
+                  data-type-text="Hello&&Hola&&Ciao&&Bonjour"
+                ></span>
+              </span>
+            </h1>
+            <p class="text-center">
+              Have an idea, need advice, or just want to say hello? We’re all
+              ears.
+            </p>
+
+            <!-- Form START -->
+            <form class="row form-border-transparent g-3 mt-4" action="{{route('contact.store')}}" id="contact-form" method="POST">
+              <div class="col-md-6">
+                <label class="form-label">Your name</label>
+                <input type="text" name="fullname" class="form-control border" />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Email address</label>
+                <input name="email"
+                  type="email"
+                  class="form-control border"
+                  id="floatingInput"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Mobile number</label>
+                <input type="text" name="phone" class="form-control border" />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Subject</label>
+                <input type="text" name="subject" class="form-control border" />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea name="message"
+                  class="form-control border"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+              </div>
+
+              <div class="col-12">
+                <!-- Check box -->
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input border"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >I agree that my data is
+                    <a
+                      href="#"
+                      class="hover-underline-animation text-primary-hover"
+                      >collected and stored</a
+                    >.</label
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 d-sm-flex align-items-center gap-3 mt-4">
+                <!-- Button -->
+                <button class="btn btn-primary mb-2 mb-md-0">
+                  Send a message
+                </button>
+                <!-- Social links -->
+                <ul class="list-inline mb-0 ms-auto">
+                  <li class="list-inline-item small heading-color">
+                    Connect with:
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/Msglobalinc1/" class="heading-color text-primary-hover"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.youtube.com/channel/UCkh34Uq4_jcMMwI4DOABExg" class="heading-color text-primary-hover"
+                      ><i class="bi bi-youtube"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://x.com/msglobalinc" class="heading-color text-primary-hover"
+                      ><i class="bi bi-twitter-x"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/company/ms-global-inc" class="heading-color text-primary-hover"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+            <!-- Form END -->
+          </div>
+        </div>
+      </section>
+      <!-- ======================= Contact form END -->
+
+      <!-- ======================= Map and office detail START -->
+
+      <section class="position-relative pt-0">
+        <!-- Bottom shape decoration -->
+        <div
+          class="position-absolute bottom-0 end-0 ms-n5 mb-n8 d-none d-lg-block z-index-2"
+        >
+          <img
+            src="{{ asset('FrontendAssets/images/elements/grad-shape/02.png')}}"
+            class="h-200px solutionVectors"
+            alt="Shape"
+          />
+        </div>
+
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <!-- Map -->
+            <div class="col-lg-5">
+              <!--<iframe
+			  class="w-100 h-200px h-lg-500px grayscale rounded-4 d-block mb-3 mb-lg-0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.208779535027!2d67.0964032817448!3d24.924956585676615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3391831f4a311%3A0x207d17e48ddc1eda!2sMS%20Global%20Inc.!5e0!3m2!1sen!2s!4v1749051254561!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe> -->
+              <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+              ...
+              </urlset>
+            </div>
+
+            <div class="col-lg-7 ps-lg-6">
+              <!-- Title -->
+              <h2 class="mb-4">Our offices</h2>
+
+              <!-- Office details -->
+              <div class="row g-4 mb-4">
+                <!-- Office item -->
+                <div class="col-md-6">
+                  <!-- Title and country image -->
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="avatar avatar-xs flex-shrink-0">
+                      <img
+                        class="avatar-img rounded-circle"
+                        src="{{ asset('FrontendAssets/images/flags/pakistan.webp')}}"
+                        alt="avatar"
+                      />
+                    </div>
+                    <h6 class="mb-0">Pakistan</h6>
+                  </div>
+                  <!-- List -->
+                  <ul class="mb-0 mt-3">
+                    <li class="mb-2">
+                      Plot No. R-52, MS House, Block 6 Gulshan-e-Iqbal, Karachi,
+                      75300
+                    </li>
+                    <!-- <li class="mb-2">Call: +1 (905) 514-8474 (Toll-free)</li> -->
+                    <li class="mb-2">
+                      Support time: Monday to Saturday 12:00 pm to 11:00 pm
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Office item -->
+                <div class="col-md-6">
+                  <!-- Title and country image -->
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="avatar avatar-xs flex-shrink-0">
+                      <img
+                        class="avatar-img rounded-circle"
+                        src="{{ asset('FrontendAssets/images/flags/323301.png')}}"
+                        alt="avatar"
+                      />
+                    </div>
+                    <h6 class="mb-0">Dubai</h6>
+                  </div>
+                  <!-- List -->
+                  <ul class="mb-0 mt-3">
+                    <li class="mb-2">
+                      Office # 8, Plot No: 539-0, Al Barsha, First Area Rasis
+                      Business Centre
+                    </li>
+                    <!-- <li class="mb-2">Call: 258-698-2410 (Toll-free)</li> -->
+                    <li class="mb-2">
+                      Support time: Sunday to Friday 9:00 am to 5:30 pm
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <a class="btn btn-secondary icon-link icon-link-hover" href="#"
+                >Contact our help center<i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Row END -->
+        </div>
+      </section>
 
 
 
