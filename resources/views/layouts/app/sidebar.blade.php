@@ -58,6 +58,7 @@
                     <!--  <li><a class="lan-5" href="{{route('admin.newsletter.index')}}">Newsletter</a></li> -->
                       <li><a class="lan-5" href="{{route('admin.newsbar.index')}}">Newsbar</a></li>
                       <li><a class="lan-5" href="{{route('admin.blog.index')}}">Blog</a></li>
+                      <li><a class="lan-5" href="{{route('admin.career.index')}}">Career</a></li>
                       <li><a class="lan-5" href="{{route('admin.partner.index')}}">Partners Logo</a></li>
                       <li><a class="lan-5" href="{{route('admin.testimonials.index')}}">Testimonials</a></li>
                       <li><a class="lan-5" href="{{route('admin.hero-section.index')}}">Hero Section</a></li>

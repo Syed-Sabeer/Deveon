@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\AdminPrivacyPolicyController;
 use App\Http\Controllers\Admin\AdminServiceController;
 use App\Http\Controllers\Admin\AdminMiniServiceController;
 use App\Http\Controllers\Admin\AdminBlogController;
+use App\Http\Controllers\Admin\AdminCareerController;
 use App\Http\Controllers\Admin\AdminPartnerController;
 use App\Http\Controllers\Admin\AdminTestimonialController;
 use App\Http\Controllers\Admin\AdminHeroSectionCrudController;
@@ -32,6 +33,7 @@ use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ServiceController;
 use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\JobApplicationController;
 use App\Http\Controllers\Frontend\WebsiteController;
 
 use Illuminate\Support\Facades\Route;
@@ -105,6 +107,7 @@ Route::get('/blogs', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'detail'])->name('blog.detail');
 Route::post('/blog/comment', [BlogController::class, 'commentStore'])->name('comment.store');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/job-application/store', [JobApplicationController::class, 'store'])->name('job.application.store');
 Route::post('/newsletter/subscribe', [WebsiteController::class, 'subscribeNewsletter'])->name('newsletter.subscribe');
 
 
@@ -207,6 +210,14 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::delete('blog/{id}', [AdminBlogController::class, 'destroy'])->name('blog.destroy');
     Route::post('blog/{id}/toggle-visibility', [AdminBlogController::class, 'toggleVisibility'])->name('blog.toggleVisibility');
 
+    // Career Routes
+    Route::get('career', [AdminCareerController::class, 'index'])->name('career.index');
+    Route::get('career/add', [AdminCareerController::class, 'add'])->name('career.add');
+    Route::post('career/store', [AdminCareerController::class, 'store'])->name('career.store');
+    Route::get('career/{id}/edit', [AdminCareerController::class, 'edit'])->name('career.edit');
+    Route::put('career/{id}', [AdminCareerController::class, 'update'])->name('career.update');
+    Route::delete('career/{id}', [AdminCareerController::class, 'destroy'])->name('career.destroy');
+    Route::post('career/{id}/toggle-visibility', [AdminCareerController::class, 'toggleVisibility'])->name('career.toggleVisibility');
 
     // About Section Routes
 

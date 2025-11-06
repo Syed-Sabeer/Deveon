@@ -175,9 +175,10 @@
                   <!-- Apply Button -->
                   <div class="d-flex justify-content-end pt-3 border-top border-secondary border-opacity-25">
                     <a href="#" 
-                       class="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center gap-2 fw-semibold"
+                       class="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center gap-2 fw-semibold apply-job-btn"
                        data-bs-toggle="modal" 
-                       data-bs-target="#applyForm">
+                       data-bs-target="#applyForm"
+                       data-job-title="Backend Laravel Developer">
                       Apply Now
                       <i class="bi bi-arrow-right"></i>
                     </a>
@@ -646,33 +647,34 @@ Testimonials END -->
             <h6 class="modal-title mb-0" id="applyFormLabel">Apply form</h6>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <form class="modal-body p-4">
+          <form id="job-application-form" class="modal-body p-4" method="POST" action="{{ route('job.application.store') }}" enctype="multipart/form-data">
+            @csrf
             <!-- Personal info -->
             <h6 class="mb-3">1. Personal info</h6>
             <div class="row g-3 mb-5">
               <div class="col-md-6">
-                <label class="form-label heading-color">First name</label>
-                <input type="text" class="form-control" />
+                <label class="form-label heading-color">First name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="firstname" id="firstname" required />
               </div>
 
               <div class="col-md-6">
-                <label class="form-label heading-color">Last name</label>
-                <input type="text" class="form-control" />
+                <label class="form-label heading-color">Last name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="lastname" id="lastname" required />
               </div>
 
               <div class="col-md-6">
-                <label class="form-label heading-color">Email address</label>
-                <input type="email" class="form-control" placeholder="name@example.com" />
+                <label class="form-label heading-color">Email address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required />
               </div>
 
               <div class="col-md-6">
-                <label class="form-label heading-color">Phone</label>
-                <input type="text" class="form-control" />
+                <label class="form-label heading-color">Phone <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="phone" id="phone" required />
               </div>
 
               <div class="col-12">
                 <label class="form-label heading-color">Linkedin url</label>
-                <input type="text" class="form-control" placeholder="www.linkedin.com/example" />
+                <input type="url" class="form-control" name="linkedin_url" id="linkedin_url" placeholder="https://www.linkedin.com/example" />
               </div>
             </div>
 
@@ -681,32 +683,32 @@ Testimonials END -->
             <div class="row g-3 mb-5">
               <div class="col-md-6">
                 <label class="form-label heading-color">Current job place</label>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" name="current_job_place" id="current_job_place" />
               </div>
 
               <div class="col-md-6">
                 <label class="form-label heading-color">Current job position</label>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" name="current_job_position" id="current_job_position" />
               </div>
 
               <div class="col-md-6">
-                <label class="form-label heading-color">Experiences</label>
-                <input type="text" class="form-control" />
+                <label class="form-label heading-color">Years of Experience <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="yearofexperince" id="yearofexperince" placeholder="e.g., 3+ Years" required />
               </div>
 
               <div class="col-md-6">
                 <label class="form-label heading-color">Current salary</label>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" name="current_salary" id="current_salary" />
               </div>
 
               <div class="col-md-6">
-                <label class="form-label heading-color">Applied positions</label>
-                <input type="text" class="form-control" />
+                <label class="form-label heading-color">Applied for Position <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="applied_for" id="applied_for" required />
               </div>
 
               <div class="col-md-6">
-                <label class="form-label heading-color">Expected salary</label>
-                <input type="text" class="form-control" />
+                <label class="form-label heading-color">Expected salary <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="expected_salary" id="expected_salary" required />
               </div>
             </div>
 
@@ -714,24 +716,25 @@ Testimonials END -->
             <h6 class="mb-3">3. Key document</h6>
             <div class="row g-3">
               <div class="col-12">
-                <label class="form-label heading-color">Upload your cv</label>
-                <input class="form-control" type="file" id="formFile" />
+                <label class="form-label heading-color">Upload your CV <span class="text-danger">*</span></label>
+                <input class="form-control" type="file" name="resume_file" id="resume_file" accept=".pdf,.doc,.docx" required />
+                <small class="text-muted">Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
               </div>
 
               <div class="col-12">
                 <label class="form-label heading-color">Cover letter</label>
-                <textarea class="form-control" style="height: 100px"></textarea>
+                <textarea class="form-control" name="covering_letter" id="covering_letter" style="height: 100px"></textarea>
               </div>
 
               <div class="col-12">
-                <input type="checkbox" class="form-check-input border" id="rememberCheck" />
-                <label class="form-check-label" for="rememberCheck">I have read & accepted Terms & Conditions.</label>
+                <input type="checkbox" class="form-check-input border" id="rememberCheck" required />
+                <label class="form-check-label" for="rememberCheck">I have read & accepted Terms & Conditions. <span class="text-danger">*</span></label>
               </div>
             </div>
 
             <!-- Buttons -->
             <div class="d-flex justify-content-between mt-4">
-              <button type="button" class="btn btn-primary">
+              <button type="submit" class="btn btn-primary" id="submit-btn">
                 Submit now
               </button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -748,5 +751,160 @@ Testimonials END -->
 @endsection
 
 @section('script')
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('job-application-form');
+    const submitBtn = document.getElementById('submit-btn');
+    let isSubmitting = false;
+    let submissionId = null;
+
+    // Remove any existing event listeners to prevent duplicates
+    if (form) {
+        form.removeEventListener('submit', handleSubmit);
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            console.log('Form submit event triggered, isSubmitting:', isSubmitting);
+
+            // Prevent multiple submissions
+            if (isSubmitting) {
+                console.log('Already submitting, preventing duplicate');
+                return false;
+            }
+
+            // Check if terms checkbox is checked
+            const termsCheckbox = document.getElementById('rememberCheck');
+            if (!termsCheckbox.checked) {
+                Swal.fire({
+                    title: 'Required!',
+                    text: 'Please accept the Terms & Conditions to continue.',
+                    icon: 'warning',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#3085d6'
+                });
+                return false;
+            }
+
+            isSubmitting = true;
+            submissionId = Date.now(); // Unique ID for this submission
+
+            console.log('Starting submission with ID:', submissionId);
+
+            // Disable submit button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Submitting...';
+
+            // Get form data
+            const formData = new FormData(form);
+
+            // Send AJAX request
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                }
+            })
+            .then(response => {
+                console.log('Response received for submission:', submissionId);
+                return response.json();
+            })
+            .then(data => {
+                console.log('Data received for submission:', submissionId, data);
+
+                // Reset button and submission flag
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Submit now';
+                isSubmitting = false;
+
+                if (data.status === 'success') {
+                    // Show success alert
+                    Swal.fire({
+                        title: data.title,
+                        text: data.message,
+                        icon: data.icon,
+                        confirmButtonText: 'OK',
+                        confirmButtonColor: '#3085d6'
+                    }).then(() => {
+                        // Reset form
+                        form.reset();
+                        // Close modal
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('applyForm'));
+                        if (modal) {
+                            modal.hide();
+                        }
+                    });
+                } else {
+                    // Show error alert
+                    let errorMessage = data.message;
+                    if (data.errors) {
+                        errorMessage = Object.values(data.errors).flat().join('<br>');
+                    }
+
+                    Swal.fire({
+                        title: data.title,
+                        html: errorMessage,
+                        icon: data.icon,
+                        confirmButtonText: 'OK',
+                        confirmButtonColor: '#d33'
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error for submission:', submissionId, error);
+
+                // Reset button and submission flag
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Submit now';
+                isSubmitting = false;
+
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Something went wrong. Please try again.',
+                    icon: 'error',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#d33'
+                });
+            });
+
+            return false;
+        }
+
+        // Add the event listener
+        form.addEventListener('submit', handleSubmit);
+    }
+
+    // Handle Apply Now button clicks to pre-fill job title
+    const applyButtons = document.querySelectorAll('.apply-job-btn');
+    applyButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const jobTitle = this.getAttribute('data-job-title');
+            const appliedForInput = document.getElementById('applied_for');
+            if (appliedForInput && jobTitle) {
+                appliedForInput.value = jobTitle;
+            }
+        });
+    });
+
+    // Also handle when modal is shown
+    const applyFormModal = document.getElementById('applyForm');
+    if (applyFormModal) {
+        applyFormModal.addEventListener('show.bs.modal', function(event) {
+            const button = event.relatedTarget;
+            if (button && button.classList.contains('apply-job-btn')) {
+                const jobTitle = button.getAttribute('data-job-title');
+                const appliedForInput = document.getElementById('applied_for');
+                if (appliedForInput && jobTitle) {
+                    appliedForInput.value = jobTitle;
+                }
+            }
+        });
+    }
+});
+</script>
 @endsection

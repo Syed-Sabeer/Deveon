@@ -12,6 +12,7 @@ use App\Models\Service;
 use App\Models\MiniService;
 use App\Models\CompanyWelcome;
 use App\Models\CmsServicePage;
+use App\Models\Career;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Validator;
@@ -29,8 +30,8 @@ public function portfolio(){
 }
 
 public function career(){
-
-    return view('frontend.career');
+    $careers = Career::where('visibility', 1)->get();
+    return view('frontend.career', compact('careers'));
 }
 public function faq(){
     $faqs = Faq::all();
