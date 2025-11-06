@@ -22,9 +22,6 @@ use App\Models\Service;
 class HomeController extends Controller
 {
 
-
-
-
 public function index()
 {
 
@@ -35,8 +32,6 @@ public function index()
         $stat->increment('home_visits');
     }
        $services = Service::where('visibility', 1)->get();
-    $hero_section = HeroSectionCrud::where('visibility', 1)->get();
-    $home_page = CmsHomePage::first();
     $faqs = Faq::where('visibility', 1)->get();
     $partners = Partner::where('visibility', 1)->get();
 
