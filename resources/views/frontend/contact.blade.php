@@ -93,9 +93,9 @@
                   >
                     <i class="bi bi-headset"></i>
                   </div>
-                  <h6>Support</h6>
+                  <h6>Contact Form</h6>
                   <p class="mb-0">
-                    Check out helpful resources, FAQs and developer tools.
+                    You can also reach our support team via the contact form
                   </p>
                 </div>
                 <!-- Card footer -->
@@ -202,7 +202,7 @@
 
               <div class="col-12 d-sm-flex align-items-center gap-3 mt-4">
                 <!-- Button -->
-                <button class="btn btn-primary mb-2 mb-md-0">
+                <button id="submit-btn" type="submit" class="btn btn-primary mb-2 mb-md-0">
                   Send a message
                 </button>
                 <!-- Social links -->
@@ -211,22 +211,22 @@
                     Connect with:
                   </li>
                   <li class="list-inline-item">
-                    <a href="https://www.facebook.com/Msglobalinc1/" class="heading-color text-primary-hover"
+                    <a href="{{ $business_settings->facebook_link }}" class="heading-color text-primary-hover"
                       ><i class="bi bi-facebook"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="https://www.youtube.com/channel/UCkh34Uq4_jcMMwI4DOABExg" class="heading-color text-primary-hover"
-                      ><i class="bi bi-youtube"></i
+                    <a href="{{ $business_settings->instagram_link }}" class="heading-color text-primary-hover"
+                      ><i class="bi bi-instagram"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="https://x.com/msglobalinc" class="heading-color text-primary-hover"
+                    <a href="{{ $business_settings->tiktok_link }}" class="heading-color text-primary-hover"
                       ><i class="bi bi-twitter-x"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/company/ms-global-inc" class="heading-color text-primary-hover"
+                    <a href="{{ $business_settings->youtube_link }}" class="heading-color text-primary-hover"
                       ><i class="bi bi-linkedin"></i
                     ></a>
                   </li>
@@ -395,12 +395,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
             }
         })
-        .then(response => {
-            console.log('Response received for submission:', submissionId);
-            return response.json();
-        })
-        .then(data => {
-            console.log('Data received for submission:', submissionId, data);
+    .then(response => {
+      console.log('Response received for submission:', submissionId);
+      // Try to parse JSON, but fall back to text if server returned plain text
+      return response.text().then(text => {
+        try {
+          return JSON.parse(text);
+        } catch (e) {
+          // If not JSON, return an object compatible with error handling
+          return { status: 'error', title: 'Response', message: text };
+        }
+      });
+    })
+    .then(data => {
+      console.log('Data received for submission:', submissionId, data);
 
             // Reset button and submission flag
             submitBtn.disabled = false;

@@ -92,7 +92,7 @@ Portfolio START -->
               <div class="card-body px-2 p-lg-5">
                 <!-- Client logo -->
                 <div class="mb-3 mb-lg-4">
-                  <img src="{{ asset('FrontendAssets/images/MSglobal-images/logo.png')}}" class="light-mode-item h-50px" alt="client logo">
+                  <img src="{{$business_settings->dark_logo_image}}" class="light-mode-item h-50px" alt="client logo">
                   <img src="{{ asset('FrontendAssets/images/MSglobal-images/MS LOGO-02.png')}}" class="dark-mode-item h-50px"
                     alt="client logo">
                 </div>
@@ -104,9 +104,9 @@ Portfolio START -->
                 <!-- List -->
                 <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
                   <li class="nav-item heading-color">2024</li>
-                  <li class="nav-item heading-color">Branding</li>
-                  <li class="nav-item heading-color">Marketing</li>
-                  <li class="nav-item heading-color">UI/UX design</li>
+                  <li class="nav-item heading-color">UI/UX </li>
+                  <li class="nav-item heading-color">Mobile App Development</li>
+                  <li class="nav-item heading-color">UI/UX </li>
                 </ul>
                 <!-- Button -->
                 <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
@@ -134,28 +134,21 @@ Portfolio START -->
               <div class="card-body px-2 p-lg-5">
                 <!-- Client logo -->
                 <div class="mb-3 mb-lg-4">
-                  <img src="{{ asset('FrontendAssets/images/MSglobal-images/logo.png')}}" class="light-mode-item h-50px" alt="client logo">
+                  <img src="{{$business_settings->dark_logo_image}}" class="light-mode-item h-50px" alt="client logo">
                   <img src="{{ asset('FrontendAssets/images/MSglobal-images/MS LOGO-02.png')}}" class="dark-mode-item h-50px"
                     alt="client logo">
                 </div>
                 <!-- Title -->
-                <h5 class="mb-3">Astoria</h5>
-                <p>Astoria Travel is a family‑run travel agency in Patmos, Greece, in continuous operation since 1952
-                  Travel Leaders
-                  +11
-                  Astoria Travel
-                  +11
-                  . As the island’s oldest agency, it began by handling ferry services to and from Piraeus and now
-                  serves as the central agent for Blue Star Ferries and the official representative of Avis‑Budget car
-                  rental on Patmos
-                  Astoria Travel.
+                <h5 class="mb-3">Def Cutz</h5>
+                <p>
+A refined, responsive site for DefCutz Studios that mirrors its premium grooming brand – showcasing stylish men’s haircuts, bespoke barber services, and immersive visual storytelling. With sleek imagery, clear service breakdowns, and streamlined booking flows, the platform encapsulates the modern barber experience while reinforcing the salon’s upscale identity.
                 </p>
                 <!-- List -->
                 <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
                   <li class="nav-item heading-color">2025</li>
-                  <li class="nav-item heading-color">Branding</li>
-                  <li class="nav-item heading-color">Marketing</li>
-                  <li class="nav-item heading-color">UI/UX design</li>
+                  <li class="nav-item heading-color">UI/UX </li>
+                  <li class="nav-item heading-color">Mobile App Development</li>
+                  <li class="nav-item heading-color">Website Development</li>
                 </ul>
                 <!-- Button -->
                 <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
@@ -214,22 +207,19 @@ Portfolio START -->
               <div class="card-body px-2 p-lg-5">
                 <!-- Client logo -->
                 <div class="mb-3 mb-lg-4">
-                  <img src="{{ asset('FrontendAssets/images/MSglobal-images/logo.png')}}" class="light-mode-item h-50px" alt="client logo">
+                  <img src="{{$business_settings->dark_logo_image}}" class="light-mode-item h-50px" alt="client logo">
                   <img src="{{ asset('FrontendAssets/images/MSglobal-images/MS LOGO-02.png')}}" class="dark-mode-item h-50px"
                     alt="client logo">
                 </div>
                 <!-- Title -->
-                <h5 class="mb-3">DCME</h5>
-                <p>Welcome to Dry Cleaning Made Easy Software!
-                  We provide affordable point-of-sale software explicitly designed for the Australian market. Starting
-                  at just $20.00 + tax per week, our local-built solution ensures seamless integration with your
-                  existing setup, backed by local service and support. </p>
+                <h5 class="mb-3">Capbeast</h5>
+                <p>A dynamic eCommerce platform similar to Shopify, CapBeast lets users fully customize caps and hats through an interactive design editor. With real-time previews, flexible product options, and seamless order management, it delivers a personalized shopping experience for custom headwear enthusiasts. </p>
                 <!-- List -->
                 <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
-                  <li class="nav-item heading-color">2022</li>
-                  <li class="nav-item heading-color">Branding</li>
-                  <li class="nav-item heading-color">Marketing</li>
-                  <li class="nav-item heading-color">UI/UX design</li>
+                  <li class="nav-item heading-color">2025</li>
+                  <li class="nav-item heading-color">UI/UX </li>
+                  <li class="nav-item heading-color">Mobile App Development</li>
+                  <li class="nav-item heading-color">Website Development</li>
                 </ul>
                 <!-- Button -->
                 <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
@@ -257,21 +247,19 @@ Portfolio START -->
               <div class="card-body px-2 p-lg-5">
                 <!-- Client logo -->
                 <div class="mb-3 mb-lg-4">
-                  <img src="{{ asset('FrontendAssets/images/MSglobal-images/logo.png')}}" class="light-mode-item h-50px" alt="client logo">
+                  <img src="{{$business_settings->dark_logo_image}}" class="light-mode-item h-50px" alt="client logo">
                   <img src="{{ asset('FrontendAssets/images/MSglobal-images/MS LOGO-02.png')}}" class="dark-mode-item h-50px"
                     alt="client logo">
                 </div>
                 <!-- Title -->
-                <h5 class="mb-3">Itailor</h5>
-                <p>iTailor is a leading online custom clothing platform that allows users to design and personalize
-                  their own suits, shirts, shoes, and more. With an intuitive 3D designer, iTailor offers affordable,
-                  made-to-measure fashion tailored to your style and measurements, delivered worldwide.</p>
+                <h5 class="mb-3">School Management App</h5>
+                <p>A comprehensive school management system streamlining academics and administration with attendance tracking, fee management, results, and timetables. Featuring dedicated portals for parents, students, and administrators, it ensures secure access, smooth communication, and efficient management across all school operations.</p>
                 <!-- List -->
                 <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
-                  <li class="nav-item heading-color">2021</li>
+                  <li class="nav-item heading-color">2025</li>
+                  <li class="nav-item heading-color">UI/UX </li>
+                  <li class="nav-item heading-color">Mobile App Development</li>
                   <li class="nav-item heading-color">Branding</li>
-                  <li class="nav-item heading-color">Marketing</li>
-                  <li class="nav-item heading-color">UI/UX design</li>
                 </ul>
                 <!-- Button -->
                 <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
@@ -329,21 +317,19 @@ Portfolio START -->
               <div class="card-body px-2 p-lg-5">
                 <!-- Client logo -->
                 <div class="mb-3 mb-lg-4">
-                  <img src="{{ asset('FrontendAssets/images/MSglobal-images/logo.png')}}" class="light-mode-item h-50px" alt="client logo">
+                  <img src="{{$business_settings->dark_logo_image}}" class="light-mode-item h-50px" alt="client logo">
                   <img src="{{ asset('FrontendAssets/images/MSglobal-images/MS LOGO-02.png')}}" class="dark-mode-item h-50px"
                     alt="client logo">
                 </div>
                 <!-- Title -->
                 <h5 class="mb-3">Monkey Beanies</h5>
-                <p>OnePageCRM is a unique combination of a simple CRM app and a productivity tool with follow-up
-                  reminders next to every contact. It helps you keep in touch with clients, prospects, and partners, and
-                  nurture business relationships.</p>
+                <p>A robust Laravel and React-based eCommerce platform offering seamless shopping with role-based portals, embroidery customization, live shipping rates, currency conversion, and tiered pricing. Featuring secure payments, real-time tracking, and an intuitive admin panel, it’s a scalable global retail solution.</p>
                 <!-- List -->
                 <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
-                  <li class="nav-item heading-color">2021</li>
-                  <li class="nav-item heading-color">Branding</li>
-                  <li class="nav-item heading-color">Marketing</li>
-                  <li class="nav-item heading-color">UI/UX design</li>
+                  <li class="nav-item heading-color">2025</li>
+                  <li class="nav-item heading-color">UI/UX </li>
+                  <li class="nav-item heading-color">Mobile App Development</li>
+                  <li class="nav-item heading-color">Website Development</li>
                 </ul>
                 <!-- Button -->
                 <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
@@ -446,7 +432,9 @@ Portfolio END -->
                 <div class="card-img-overlay p-4 p-xxl-5">
                   <h5 class="text-white">Def Cutz Studio</h5>
                   <p class="text-white">
-                    Τhe small Greek island of Patmos is situated in the Aegean Sea About Patmos Beaches
+                  ChatGPT said:
+
+A refined, responsive site for DefCutz Studios that mirrors its premium grooming brand – showcasing stylish men’s haircuts, bespoke barber services, and immersive visual storytelling. With sleek imagery, clear service breakdowns, and streamlined booking flows, the platform encapsulates the modern barber experience while reinforcing the salon’s upscale identity.
                   </p>
                 </div>
               </div>
@@ -517,10 +505,9 @@ Portfolio END -->
 
                 <!-- Card elements -->
                 <div class="card-img-overlay p-4 p-xxl-5">
-                  <h5 class="text-white">DCME</h5>
+                  <h5 class="text-white">Capbeast</h5>
                   <p class="text-white">
-                    Welcome to Dry Cleaning Made Easy Software, where we offer cutting-edge dry cleaning software
-                    solutions
+                 A dynamic eCommerce platform similar to Shopify, CapBeast lets users fully customize caps and hats through an interactive design editor. With real-time previews, flexible product options, and seamless order management, it delivers a personalized shopping experience for custom headwear enthusiasts.
                   </p>
                 </div>
               </div>
@@ -745,7 +732,7 @@ Testimonials START -->
 
                         <div>
                           <h6 class="mb-0">Emma Watson</h6>
-                          <span>UI/UX designer</span>
+                          <span>UI/UX er</span>
                         </div>
                       </div>
                     </div>
