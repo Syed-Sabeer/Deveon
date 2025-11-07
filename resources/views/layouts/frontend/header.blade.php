@@ -42,15 +42,15 @@
         <nav class="navbar navbar-expand-xl">
           <div class="container">
             <!-- Logo START -->
-            <a class="navbar-brand me-0" href="index.html">
+            <a class="navbar-brand me-0" href="{{ route('home') }}">
               <img
                 class="light-mode-item navbar-brand-item"
-                src="{{$business_settings->dark_logo_image}}"
+                src="{{ asset($businessSetting->dark_logo_image) }}"
                 alt="logo"
               />
               <img
                 class="dark-mode-item navbar-brand-item"
-                src="{{$business_settings->dark_logo_image}}"
+                src="{{ asset($businessSetting->dark_logo_image) }}"
                 alt="logo"
               />
             </a>
