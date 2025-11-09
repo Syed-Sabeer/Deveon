@@ -32,7 +32,7 @@
           <!-- Breadcrumb -->
           <nav class="mb-2 justify-content-center d-flex" aria-label="breadcrumb">
             <ol class="breadcrumb pt-0">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
                 About us
               </li>
@@ -140,7 +140,7 @@ Hero END -->
                   transparency, and measurable outcomes—empowering
                   organizations to thrive in a fast-evolving digital world.
                 </p>
-                <a class="btn btn-primary icon-link icon-link-hover mt-3" href="#">Explore our work<i
+                  <a class="btn btn-primary icon-link icon-link-hover mt-3" href="{{ route('portfolio') }}">Explore our work<i
                     class="bi bi-arrow-right"></i>
                 </a>
               </div>

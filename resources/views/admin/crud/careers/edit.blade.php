@@ -85,10 +85,16 @@
   if ($isEdit && $career->responsiblities) {
     // responsiblities is already an array due to model cast
     $responsibilities = is_array($career->responsiblities) ? $career->responsiblities : [];
+    // Ensure all values are strings
+    $responsibilities = array_map(function($item) {
+      return is_string($item) ? $item : (is_array($item) ? json_encode($item) : (string)$item);
+    }, $responsibilities);
   }
   if (empty($responsibilities)) {
     $responsibilities = [''];
   }
+  // Encode responsibilities back to JSON for hidden input
+  $responsibilitiesJson = json_encode($responsibilities);
 @endphp
 
 <form method="POST" action="{{ $isEdit ? route('admin.career.update', $career->id) : route('admin.career.store') }}">
@@ -136,7 +142,7 @@
     <div id="responsibilities-container">
       @foreach($responsibilities as $index => $responsibility)
       <div class="responsibility-item">
-        <input type="text" class="form-control responsibility-input" name="responsibilities[]" placeholder="Enter responsibility" value="{{ old('responsibilities.'.$index, $responsibility) }}" required>
+        <input type="text" class="form-control responsibility-input" name="responsibilities[]" placeholder="Enter responsibility" value="{{ old('responsibilities.'.$index, is_string($responsibility) ? $responsibility : '') }}" required>
         <button type="button" class="btn btn-danger remove-responsibility" onclick="removeResponsibility(this)" style="display: {{ count($responsibilities) > 1 ? 'block' : 'none' }};">
           <i class="fa fa-times"></i>
         </button>
@@ -146,7 +152,7 @@
     <button type="button" class="btn btn-secondary mt-2" onclick="addResponsibility()">
       <i class="fa fa-plus pe-2"></i>Add More
     </button>
-    <input type="hidden" name="responsiblities" id="responsibilities-hidden" value="{{ old('responsiblities', $career->responsiblities ?? '[]') }}">
+    <input type="hidden" name="responsiblities" id="responsibilities-hidden" value="{{ old('responsiblities', $responsibilitiesJson ?? '[]') }}">
   </div>
 
   <div class="col-md-6">

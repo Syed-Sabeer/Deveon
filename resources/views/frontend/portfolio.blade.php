@@ -25,7 +25,7 @@
         <!-- Breadcrumb -->
         <nav class="mb-2 d-flex justify-content-center" aria-label="breadcrumb">
           <ol class="breadcrumb breadcrumb-dark pt-0">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">
               Portfolio
             </li>
@@ -556,7 +556,7 @@ A refined, responsive site for DefCutz Studios that mirrors its premium grooming
 
             <!-- Button -->
             <div class="col-xl-6 text-xl-end">
-              <a href="/contact-us-v1.html" class="btn btn-dark mb-0">Let's work together</a>
+              <a href="{{ route('contact') }}" class="btn btn-dark mb-0">Let's work together</a>
             </div>
           </div>
         </div>
@@ -753,7 +753,7 @@ Testimonials START -->
             <div class="row align-items-center px-md-5">
               <div class="col-lg-4">
                 <h5 class="mb-4 mb-lg-0">
-                  More than 500+ clients using
+                  More than 200+ clients using
                   <span class="text-primary">Deveon Inc</span> platform
                 </h5>
               </div>

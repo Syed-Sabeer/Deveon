@@ -102,7 +102,7 @@ About START -->
                   <span class="heading-bg">Technology</span>.
                 </h2>
                 <p>
-                  At Deveon Inc, passion drives performance. Since 2007,
+                  At Deveon Inc, passion drives performance. Since 2015,
                   we've built a strong reputation for delivering world-class
                   IT services, custom application development, and digital
                   marketing solutions tailored to each client’s vision.

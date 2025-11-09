@@ -18,7 +18,7 @@
               />
             </a>
             <p class="my-3 my-xl-4">
-             At Deveon Inc, passion drives performance. Since 2007, we've built a strong reputation for delivering world-class IT services, custom application development, and digital marketing solutions tailored to each client’s vision.
+             At Deveon Inc, passion drives performance. Since 2015, we've built a strong reputation for delivering world-class IT services, custom application development, and digital marketing solutions tailored to each client’s vision.
             </p>
           </div>
 

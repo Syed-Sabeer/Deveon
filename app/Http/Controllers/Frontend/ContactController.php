@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\DB;
 class ContactController extends Controller
 {
     public function index(){
-        $contact_details = ContactCmsPage::first();
-        return view("frontend.contact", compact('contact_details'));
+        return view("frontend.contact");
     }
 
     public function store(Request $request)
@@ -26,7 +25,7 @@ class ContactController extends Controller
                 'email' => 'required|email|max:255',
                 'subject' => 'required|string|max:255',
                 'message' => 'required|string|max:1000',
-                
+
             ]);
 
 

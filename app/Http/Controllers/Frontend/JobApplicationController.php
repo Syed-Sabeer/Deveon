@@ -139,3 +139,4 @@ class JobApplicationController extends Controller
     }
 }
 
+

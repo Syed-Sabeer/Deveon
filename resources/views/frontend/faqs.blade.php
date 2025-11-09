@@ -23,7 +23,7 @@
                     </div>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
+                            <a href="{{ route('home') }}">
                             Home
                             </a>
                         </li>
@@ -127,7 +127,7 @@
                         Stay Connected With <br> Cutting Edge IT
                     </h2>
                     <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                        <a href="contact.html"> <span class="theme-btn"> talk TO  A SPECIALIST </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
+                        <a href="{{ route('contact') }}"> <span class="theme-btn"> talk TO  A SPECIALIST </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                     </div>
                 </div>
             </div>
