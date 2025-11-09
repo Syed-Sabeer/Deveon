@@ -13,7 +13,7 @@
             <a href="{{ route('home') }}">
               <img
                 class="footer-logo"
-                src="{{$business_settings->light_logo_image}}"
+                src="{{ asset($business_settings->light_logo_image) }}"
                 alt="logo"
               />
             </a>

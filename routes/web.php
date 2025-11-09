@@ -35,45 +35,43 @@ use App\Http\Controllers\Frontend\ServiceController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\JobApplicationController;
 use App\Http\Controllers\Frontend\WebsiteController;
-
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 
 
 
 
+Route::get('/clear-cache', function () {
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('optimize:clear');
 
-// Force Clear Everything Route
-Route::get('/force-clear-all', function() {
-    try {
-        // Clear all Laravel caches
-        \Illuminate\Support\Facades\Artisan::call('cache:clear');
-        \Illuminate\Support\Facades\Artisan::call('config:clear');
-        \Illuminate\Support\Facades\Artisan::call('view:clear');
-        \Illuminate\Support\Facades\Artisan::call('route:clear');
-
-        // Clear compiled files
-        \Illuminate\Support\Facades\Artisan::call('clear-compiled');
-
-        // Recache config
-        \Illuminate\Support\Facades\Artisan::call('config:cache');
-
-        // Clear OPcache if available
-        if (function_exists('opcache_reset')) {
-            opcache_reset();
-        }
-
-        return '<h1>✅ Everything Cleared!</h1><br>' .
-               '<p>Now check your environment:</p>' .
-               '<p><a href="/debug-urls">Debug URLs</a></p>' .
-               '<p><a href="/">Go to Home Page</a></p>';
-
-    } catch (Exception $e) {
-        return '<h1>❌ Error</h1><p>' . $e->getMessage() . '</p>';
-    }
+    return 'All caches cleared successfully!';
 });
 
+Route::get('/storage-link', function () {
+    try {
+        $link = public_path('storage');
+
+        // Remove the existing link if it exists
+        if (File::exists($link)) {
+            File::delete($link);
+        }
+
+        // Create the symbolic link again
+        Artisan::call('storage:link');
+
+        return '✅ Storage link has been refreshed successfully!';
+    } catch (\Exception $e) {
+        return '❌ Failed to refresh storage link: ' . $e->getMessage();
+    }
+});
 
 Route::group(['middleware' => ['guest']], function () {
 
